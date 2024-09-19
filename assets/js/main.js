@@ -48,3 +48,15 @@
 			});
 
 })(jQuery);
+
+function toggleDivs() {
+    const div1 = document.getElementById('Personal');
+    const div2 = document.getElementById('Corporate');
+	const button1 = document.getElementById('PersonalButton');
+    const button2 = document.getElementById('CorporateButton');
+
+    div1.classList.toggle('hidden');
+    div2.classList.toggle('hidden');
+	button1.classList.toggle('primary');
+    button2.classList.toggle('primary');
+}

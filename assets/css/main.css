@@ -41,7 +41,7 @@ blockquote, q {
 }
 
 	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
+		/* content: ''; */
 		content: none;
 	}
 
@@ -2740,7 +2740,7 @@ input, select, textarea {
 		}
 
 		header.minor {
-			margin: 0 0 2.5em 0;
+			margin: 0 0 1em 0;
 			text-align: center;
 		}
 	
@@ -4339,7 +4339,7 @@ input, select, textarea {
 }
 
 .pricing-palden .pricing-currency {
-	font-size: 0.15em;
+	font-size: 0.25em;
 	vertical-align: top;
 }
 
@@ -4450,4 +4450,10 @@ transform: translate3d(-90px,0,0);
 100% { 
 transform: translate3d(85px,0,0);
 }
+}
+
+
+
+.hidden {
+    display: none;
 }
