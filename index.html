@@ -203,11 +203,11 @@
 					<!-- <section id="two" class="wrapper style2 special"> -->
 						<header class="major">
 							<h2>Files</h2>
-							<p>Unlimited cloud storage built on a custom distributed file system, splitting files across multiple stores. <br> While only storing the deconstructed refences inside per user sqlite encrypyted databases. <br> The principle being that if we can't access your data, then nobody can.</p>
+							<p>Unlimited cloud storage built on a custom distributed file system, encrypting & splitting files across multiple stores. <br> While only storing the deconstructed refences inside encrypyted per user sqlite databases. <br> The principle being that if we can't access your data, then nobody can.</p>
 						</header>
 						<ul class="actions special">
 							<li><a href="http://login.hstles.com/sign-up" class="button primary icon solid fa-cloud">sign up</a></li>
-							<li><a href="#pricing" class="button icon solid fa-chevron-down scrolly">pricing</a></li>
+							<li><a href="#FilesPricing" class="button icon solid fa-chevron-down scrolly">pricing</a></li>
 						</ul>
 					<!-- </section> -->
 					<section class="special">
@@ -223,7 +223,7 @@
 			</section>
 
 			<!--Pricing -->
-			<section id="pricing" class="wrapper">
+			<section id="FilesPricing" class="wrapper">
 				<div>
 					<section>
 						<header class="minor">
@@ -246,7 +246,9 @@
 							<ul class="pricing-feature-list">
 								<li class="pricing-feature">• Unlimited Archival Storage</li>
 							</ul>
-							<button class="pricing-action">Sign Up</button>
+							<a href="http://login.hstles.com/sign-up" class="pricing-action">
+								<button class="pricing-action">Sign Up</button>
+							</a>
 						</div>
 						<div class="pricing-item features-item ja-animate pricing__item--featured" data-animation="move-from-bottom" data-delay="item-1" >
 							<div class="pricing-deco" style="background: linear-gradient(135deg,#65a5e6,#4696e5)">
@@ -260,14 +262,16 @@
 								<h3 class="pricing-title">Base</h3>
 							</div>
 							<ul class="pricing-feature-list">
-								<li class="pricing-feature">• Download Links <br>(60 day expiration)</li>
+								<li class="pricing-feature">• Download Links <a data-tooltip="60 Day Expiration"><i class="fa fa-info-circle"></i></a></li>
 								<li class="pricing-feature">• 30 Day Deletion Recovery</li>
-								<li class="pricing-feature">• Faster downloads & uploads</li>
-								<li class="pricing-feature">• In browser previewing</li>
-								<li class="pricing-feature">• Cloud Files App Access <br> (MacOS & Windows)</li>
+								<li class="pricing-feature">• Faster Downloads & Uploads</li>
+								<!-- <li class="pricing-feature">• In browser previewing</li> -->
+								<li class="pricing-feature">• Cloud Files App Access <a data-tooltip="MacOS & Windows"><i class="fa fa-info-circle"></i></a></li>
 								<li class="pricing-feature">• 8 Datastores</li>
 							</ul>
-							<button class="pricing-action">Upgrade</button>
+							<a href="http://files.hstles.com/plans#base" class="pricing-action">
+								<button class="pricing-action primary">Upgrade</button>
+							</a>
 						</div>
 						<div class="pricing-item features-item ja-animate" data-animation="move-from-bottom" data-delay="item-2" >
 							<div class="pricing-deco">
@@ -278,14 +282,16 @@
 									<path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
 								</svg>
 								<div class="pricing-price"><span class="pricing-currency">$</span>11<span class="pricing-period">/ month</span></div>
-								<h3 class="pricing-title">Additional</h3>
+								<h3 class="pricing-title">Extended</h3>
 							</div>
 							<ul class="pricing-feature-list">
-								<li class="pricing-feature">• Download links don't expire</li>
-								<li class="pricing-feature">• API Key Generation <br> (for Directory Monitoring Upload Service/Tray Application)</li>
+								<li class="pricing-feature">• Download Links Don't Expire</li>
+								<li class="pricing-feature" >• Automatic Upload Application <a data-tooltip="Enterprise Directory Monitoring Service Application"><i class="fa fa-info-circle"></i></a></li>
 								<li class="pricing-feature">• 15 Datastores</li>
 							</ul>
-							<button class="pricing-action">Upgrade</button>
+							<a href="http://files.hstles.com/plans#extended" class="pricing-action">
+								<button class="pricing-action">Upgrade</button>
+							</a>
 						</div>
 					</div>
 					<div id="Corporate" class="pricing pricing-palden hidden">
@@ -306,7 +312,9 @@
 								<li class="pricing-feature">• User management & permissions</li>
 								<li class="pricing-feature">• 20 Datastores</li>
 							</ul>
+							<a href="#" class="pricing-action">
 							<button class="pricing-action">Contact Us</button>
+							</a>
 						</div>
 						<div class="pricing-item features-item ja-animate" data-animation="move-from-bottom" data-delay="item-2" >
 							<div class="pricing-deco">
@@ -320,7 +328,7 @@
 								<h3 class="pricing-title">Additional Users</h3>
 							</div>
 							<ul class="pricing-feature-list">
-								<li><span class="icon solid fa-user"></span></li>
+								<li><span class="icon solid fa fa-user-plus"></span></li>
 								<li class="pricing-feature">per additional user</li>
 								<!-- <li class="pricing-feature">• API Key Generation <br> (for Directory Monitoring Upload Service/Tray Application)</li> -->
 								<!-- <li class="pricing-feature">• 15 Datastores</li> -->
