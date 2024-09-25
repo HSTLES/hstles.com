@@ -4238,6 +4238,10 @@ input, select, textarea {
 	margin: 0 auto;
 }
 
+.pricing-item-spacer {
+	padding-right: 50px;
+}
+
 .pricing-item {
 	position: relative;
 	display: -webkit-flex;
