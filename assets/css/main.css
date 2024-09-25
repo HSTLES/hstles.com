@@ -119,8 +119,16 @@ input, select, textarea {
 	}
 
 	html, input, select, textarea {
-		font-size: 16pt;
+		font-size: 14pt;
 	}
+
+		@media screen and (max-width: 2080px) {
+
+			html, input, select, textarea {
+				font-size: 13pt;
+			}
+
+		}
 
 		@media screen and (max-width: 1680px) {
 
@@ -1924,17 +1932,17 @@ input, select, textarea {
 
 		}
 
-	@media screen and (max-width: 480px) and (orientation: portrait) {
+	/* @media screen and (max-width: 480px) and (orientation: portrait) {
 
 		input[type="submit"],
 		input[type="reset"],
 		input[type="button"],
 		button,
 		.button {
-			/* padding: 0; */
+			padding: 0;
 		}
 
-	}
+	} */
 
 	input[type="submit"],
 	input[type="reset"],
