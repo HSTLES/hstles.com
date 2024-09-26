@@ -86,7 +86,7 @@
 				background-color: _palette($p, border2-bg);
 			}
 
-			&.primary {
+			&.active {
 				box-shadow: none;
 
 				@if _palette($p, invert) == true {
