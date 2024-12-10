@@ -4172,17 +4172,15 @@ input, select, textarea {
 .illustration {
 	display: block;
 	position: relative;
-	width: auto;
-	height: 90%;
+	width: 90%; 
+	height: auto;
 	margin: 0 auto;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-10%);
   }
   
   .hover {
-	/* width: 100%; */
 	width: 30%;
-	/* height: 100%; */
 	animation: hover 5s ease-in-out infinite;
 	animation-fill-mode: forwards;
   }
