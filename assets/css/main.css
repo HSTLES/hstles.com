@@ -4172,7 +4172,7 @@ input, select, textarea {
 .illustration {
 	display: block;
 	position: relative;
-	width: 110%; 
+	width: 100%; 
 	height: auto;
 	margin: 0 auto;
 	top: 50%;
