@@ -4176,7 +4176,7 @@ input, select, textarea {
 	height: auto;
 	margin: 0 auto;
 	top: 50%;
-	transform: translateY(-10%);
+	transform: translateY(-5%);
   }
   
   .hover {
