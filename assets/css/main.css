@@ -4181,8 +4181,8 @@ input, select, textarea {
   
   .hover {
 	/* width: 100%; */
-	width: 25%;
-	/* height: 63%; */
+	width: 30%;
+	/* height: 100%; */
 	animation: hover 5s ease-in-out infinite;
 	animation-fill-mode: forwards;
   }
