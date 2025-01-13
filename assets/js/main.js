@@ -43,4 +43,4 @@
 
 })(jQuery);
 
-$('.carousel').carousel();
+// $('.carousel').carousel();
