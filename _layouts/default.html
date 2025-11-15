@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     
-    <title id="page-title">HSTLES</title>
-    <meta name="description" id="page-description" content="Beyond hosting. Into solving." />
+    <title>{{ page.title | default: "HSTLES" }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -36,25 +36,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#branded-saas">Our Products</a>
+                        <a class="nav-link" href="./branded-saas.html">Our Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#custom-saas">Custom Solutions</a>
+                        <a class="nav-link" href="./custom-saas.html">Custom Solutions</a>
                     </li>
-                    <li class="nav-item dropdown hidden">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="legalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-labelledby="legalDropdown">
                             Legal & Support
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="legalDropdown">
-                            <li><a class="dropdown-item" href="#privacy">Privacy Policy</a></li>
-                            <li><a class="dropdown-item" href="#privacy-branded">Privacy - Products</a></li>
-                            <li><a class="dropdown-item" href="#privacy-custom">Privacy - Custom</a></li>
+                            <li><a class="dropdown-item" href="./privacy.html">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="./privacy-branded.html">Privacy - Products</a></li>
+                            <li><a class="dropdown-item" href="./privacy-custom.html">Privacy - Custom</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#sla-branded">Service Expectations</a></li>
-                            <li><a class="dropdown-item" href="#sla-custom">Custom Solutions SLA</a></li>
+                            <li><a class="dropdown-item" href="./sla-branded.html">Service Expectations</a></li>
+                            <li><a class="dropdown-item" href="./sla-custom.html">Custom Solutions SLA</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="https://status.hstles.com" target="_blank">
                                 <i class="fas fa-chart-line"></i> Status Page
@@ -62,7 +62,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ms-2" href="https://login.hstles.com" target="_blank">
+                        <a class="nav-link btn btn-outline-light ms-2" href="https://login.hstles.com" target="_blank">
                             <i class="fas fa-sign-in-alt me-2"></i>Login
                         </a>
                     </li>
@@ -72,7 +72,7 @@
     </nav>
     
     <!-- Page Content -->
-    <div id="page-content"></div>
+    {{ content }}
     
     <!-- Footer -->
     <footer id="footer">
@@ -95,7 +95,7 @@
         <ul class="icons">
             <li><a href="https://github.com/HSTLES" class="icon brands fa-github"><span class="label">Github</span></a></li>
             <li><a href="https://status.hstles.com/" target="_blank" class="icon solid fa-chart-line"><span class="label">Service Status</span></a></li>
-            <li><a href="#privacy" class="icon solid fa-user-secret"><span class="label">Privacy Policy</span></a></li>
+            <li><a href="./privacy.html" class="icon solid fa-user-secret"><span class="label">Privacy Policy</span></a></li>
         </ul>
         <p class="copyright">&copy; HSTLES. Australian-based. Privacy Act 1988 compliant.</p>
     </footer>
@@ -106,22 +106,9 @@
     </button>
     
     <style>
-        /* Remove default body margins */
-        body {
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-        
-        /* Page content positioning - content starts at top, extends behind navbar */
-        #page-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        /* Add top padding to first element in each page to prevent navbar overlap */
-        #page-content > :first-child {
-            padding-top: 120px;
-        }
+        /* Body padding for fixed navbar */
+        body.is-preload { padding-top: 0 !important; }
+        body { padding-top: 56px; }
         
         /* Navbar - 60% opacity with #3E97FF hover */
         .navbar {
@@ -140,10 +127,6 @@
             font-weight: 700;
             font-size: 1.3em;
         }
-        .navbar-brand i {
-            padding-left: 0.3em;
-            padding-right: 0.3em;
-        }
         .navbar-nav .nav-link {
             margin: 0 0.5em;
             transition: color 0.2s;
@@ -152,75 +135,14 @@
             color: #3E97FF !important; /* Primary blue hover */
         }
         
-        /* Navbar toggler (hamburger menu) - remove border */
-        .navbar-toggler {
-            border: none !important;
-            padding: 0.25rem 0.5rem;
-            box-shadow: none !important;
-        }
-        .navbar-toggler:focus {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-        
-        /* Dropdown menu styling - seamless with navbar */
-        .navbar-nav .dropdown-toggle {
-            color: rgba(255, 255, 255, 0.55) !important;
-        }
-        .navbar-nav .dropdown-toggle:hover {
-            color: #3E97FF !important;
-        }
-        .navbar-nav .dropdown-toggle::after {
-            opacity: 0.55;
-            margin-left: 0.3em;
-        }
-        .navbar-nav .show > .nav-link {
-            color: rgba(255, 255, 255, 0.55) !important;
-        }
-        
-        .dropdown-menu {
-            background-color: rgba(130, 130, 130, 0.6) !important;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: none;
-            border-radius: 0;
-            padding: 0;
-            margin-top: 1px;
-            box-shadow: none;
-            min-width: 100%;
-        }
-        .dropdown-item {
-            color: rgba(255, 255, 255, 0.55);
-            padding: 0.625rem 1rem;
-            transition: color 0.2s;
-            font-weight: 400;
-            white-space: nowrap;
-        }
-        .dropdown-item:hover {
-            background-color: transparent;
-            color: #3E97FF !important;
-        }
-        .dropdown-item:active {
-            background-color: transparent;
-            color: #3E97FF !important;
-        }
-        .dropdown-divider {
-            border-color: rgba(255, 255, 255, 0.05);
-            margin: 0;
-            opacity: 1;
-        }
-        
-        /* Back to top button - no border, blue hover */
+        /* Back to top button - no border, gray hover */
         .back-to-top {
             position: fixed;
             bottom: 30px;
             right: 30px;
             width: 50px;
             height: 50px;
-            /* color: #fff; */
+            color: #fff;
             border: none !important;
             outline: none !important;
             border-radius: 8px;
@@ -233,13 +155,8 @@
             transition: all 0.3s;
             padding: 0;
         }
-        .back-to-top i {
-            color: #828282;
-        }
-        .back-to-top:hover i {
-            color: #3E97FF !important;
-        }
         .back-to-top:hover {
+            color: #828282; /* Gray icon on hover */
             transform: translateY(-3px);
         }
         .back-to-top:focus {
@@ -284,7 +201,6 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/page-loader.js"></script>
     
     <!-- Back to Top Functionality -->
     <script>

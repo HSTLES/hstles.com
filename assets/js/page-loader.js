@@ -147,10 +147,32 @@
                 
                 // Check if it's an internal page link
                 if (href.startsWith('#')) {
-                    e.preventDefault();
                     const pageName = href.slice(1);
-                    this.loadPage(pageName);
-                    return;
+                    
+                    // Only treat as page navigation if it's a known route
+                    if (this.routes.hasOwnProperty(pageName)) {
+                        e.preventDefault();
+                        this.loadPage(pageName);
+                        return;
+                    }
+                    
+                    // If it has scrolly class or is an anchor link, let browser handle it
+                    if (link.classList.contains('scrolly') || href.match(/#[\w-]+$/)) {
+                        // Handle smooth scrolling to anchor
+                        e.preventDefault();
+                        const targetId = pageName;
+                        const targetElement = document.getElementById(targetId);
+                        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                            // Update URL hash without triggering navigation
+                            history.replaceState(null, '', '#' + this.currentPage);
+                        }
+                        return;
+                    }
                 }
                 
                 // Convert .html links to hash navigation
