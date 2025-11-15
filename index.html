@@ -3,270 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>HSTLES</title>
+    
+    <title id="page-title">HSTLES</title>
+    <meta name="description" id="page-description" content="Beyond hosting. Into solving." />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" href="images/hstles.png" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="is-preload">
-    <!-- Header -->
-    <header id="header">
-        <div class="content">
-            <h1><a href="#">HSTLES</a></h1>
-            <p>*Coming Soon*</p>
-            <p>Unlimited Cloud Storage<br>
-                all you need to do is <a href="https://login.hstles.com/files">sign up</a>
-            </p>
-            <ul class="actions">
-                <li><a href="https://login.hstles.com/files" class="button active icon solid fa-cloud">login</a></li>
-                <li><a href="#details" class="button icon solid fa-chevron-down scrolly">something else?</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-cube me-2"></i>HSTLES
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#branded-saas">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#custom-saas">Custom Solutions</a>
+                    </li>
+                    <li class="nav-item dropdown hidden">
+                        <a class="nav-link dropdown-toggle" href="#" id="legalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-labelledby="legalDropdown">
+                            Legal & Support
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="legalDropdown">
+                            <li><a class="dropdown-item" href="#privacy">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="#privacy-branded">Privacy - Products</a></li>
+                            <li><a class="dropdown-item" href="#privacy-custom">Privacy - Custom</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#sla-branded">Service Expectations</a></li>
+                            <li><a class="dropdown-item" href="#sla-custom">Custom Solutions SLA</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://status.hstles.com" target="_blank">
+                                <i class="fas fa-chart-line"></i> Status Page
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2" href="https://login.hstles.com" target="_blank">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="hover content"><img src="/assets/css/images/hstles/box.svg" class="illustration"></div>
-    </header>
-
-    <!-- One -->
-    <section id="banner" class="wrapper style2 special">
-        <header class="major">
-            <h2>HSTLES is a variety SaaS developer<br />
-                providing numerous solutions to observed problems</h2>
-        </header>
-        <ul class="icons major">
-            <li><span class="icon solid fa-download"><span class="label"></span></span></li>
-            <li><span class="icon solid fa-sync"><span class="label"></span></span></li>
-            <li><span class="icon solid fa-cloud"><span class="label"></span></span></li>
-        </ul>
-    </section>
-
-    <!-- Two -->
-    <section id="details" class="wrapper">
-        <header class="major">
-            <h2>Files, Sign & Send</h2>
-            <p>Unlimited cloud storage built on a custom distributed file system, encrypting & splitting files across multiple stores.<br>
-                While only storing the deconstructed references inside encrypted per user sqlite databases.<br>
-                The principle being that if we can't access your data, then nobody can.<br><br>
-                We also provide organisations access to our suit of solutions from Oauth emails, email signatures & document signing solution.
-            </p>
-        </header>
-        <ul class="actions special">
-            <i class="fa-solid fa-folder-arrow-up"></i>
-            <li><a href="https://login.hstles.com/files" class="button active icon solid fa-file-arrow-up">files</a></li>
-            <li><a href="https://login.hstles.com/sign" class="button active icon solid fa-pen-nib disabled">sign</a></li>
-            <li><a href="https://login.hstles.com/send" class="button active icon solid fa-paper-plane disabled">send</a></li>
-            <li><a href="https://login.hstles.com/sigil" class="button active icon solid fa-signature disabled">sigil</a></li>
-            <li><a href="#pricing" class="button icon solid fa-chevron-down scrolly">pricing</a></li>
-        </ul>
-    </section>
-
-    <!-- Pricing -->
-    <section id="pricing" class="wrapper">
-        <div id="pricing-container" class="container my-5">
-            <h2 class="text-center mb-4">Pricing</h2>
-            <ul class="nav nav-tabs justify-content-center" id="pricingTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab" aria-controls="personal" aria-selected="true">
-                        <span>Personal</span><i class="fas fa-chevron-circle-left"></i>
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="corporate-tab" data-bs-toggle="tab" data-bs-target="#corporate" type="button" role="tab" aria-controls="corporate" aria-selected="false">
-                        <i class="fas fa-chevron-circle-right"></i><span>Corporate</span>
-                    </button>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <!-- Personal Plans -->
-                <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
-                    <div id="Personal" class="pricing pricing-palden">
-                        <div class="pricing-item pricing-card features-item ja-animate" data-animation="move-from-bottom" data-delay="item-0" >
-                            <div class="pricing-deco">
-                                <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" y="0px">
-                                    <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
-                                    <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
-                                </svg>
-                                <div class="pricing-price"><span class="pricing-currency">$</span>0<span class="pricing-period">/ month</span></div>
-                                <h3 class="pricing-title">Free</h3>
-                            </div>
-                            <ul class="pricing-feature-list">
-                                <li class="pricing-feature">• Unlimited Archival Storage</li>
-                            </ul>
-                            <a href="http://login.hstles.com/" class="pricing-action">
-                                <button class="pricing-action">Sign Up</button>
-                            </a>
-                        </div>
-                        <div class="pricing-item pricing-card features-item ja-animate pricing__item--featured" data-animation="move-from-bottom" data-delay="item-1" >
-                            <div class="pricing-deco" style="background: linear-gradient(135deg,#549ce3,#4696e5)">
-                                <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" y="0px">
-                                    <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
-                                    <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
-                                </svg>
-                                <div class="pricing-price"><span class="pricing-currency">$</span>8<span class="pricing-period">/ month</span></div>
-                                <h3 class="pricing-title">Base</h3>
-                            </div>
-                            <ul class="pricing-feature-list">
-                                <li class="pricing-feature">• Download Links <a data-tooltip="Set number of accesses or time limit up to 60 days"><i class="fa fa-info-circle"></i></a></li>
-                                <li class="pricing-feature">• 30 Day Deletion Recovery</li>
-                                <li class="pricing-feature">• Faster Downloads & Uploads</li>
-                                <!-- <li class="pricing-feature">• In browser previewing</li> -->
-                                <li class="pricing-feature">• Cloud Files App Access <a data-tooltip="Windows & MacOS"><i class="fa fa-info-circle"></i></a></li>
-                                <li class="pricing-feature">• 3 Datastores</li>
-                            </ul>
-                            <a href="http://files.hstles.com/plans" class="pricing-action">
-                                <button class="pricing-action active">Upgrade</button>
-                            </a>
-                        </div>
-                        <div class="pricing-item pricing-card features-item ja-animate" data-animation="move-from-bottom" data-delay="item-2" >
-                            <div class="pricing-deco">
-                                <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" y="0px">
-                                    <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
-                                    <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
-                                </svg>
-                                <div class="pricing-price"><span class="pricing-currency">$</span>12<span class="pricing-period">/ month</span></div>
-                                <h3 class="pricing-title">Extended</h3>
-                            </div>
-                            <ul class="pricing-feature-list">
-                                <li class="pricing-feature" >• API Upload Access <a data-tooltip="Enterprise Directory Monitoring Service Application Available"><i class="fa fa-info-circle"></i></a></li>
-                                <li class="pricing-feature">• Persistent Download Links</li>
-                                <li class="pricing-feature">• No File Type Restrictions</li>
-                                <li class="pricing-feature" >• Shared Datastores <a data-tooltip="Create a shared datastore & invite up to 5 users"><i class="fa fa-info-circle"></i></a></li>
-                                <li class="pricing-feature">• 6 Datastores</li>
-                            </ul>
-                            <a href="http://files.hstles.com/plans" class="pricing-action">
-                                <button class="pricing-action">Upgrade</button>
-                            </a>
-                        </div>
+    </nav>
+    
+    <!-- Page Content -->
+    <div id="page-content"></div>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- Trust Indicators -->
+        <div class="trust-indicators mb-4">
+            <div class="container">
+                <div class="row text-center justify-content-center align-items-center">
+                    <div class="col-auto px-3 py-2">
+                        <i class="fas fa-shield-alt me-2"></i>
+                        <span class="small"><strong>Privacy Act Compliant</strong></span>
                     </div>
-                </div>
-                <!-- Corporate Plans -->
-                <div class="tab-pane fade" id="corporate" role="tabpanel" aria-labelledby="corporate-tab">
-                    <div id="Corporate" class="pricing pricing-palden">
-                        <div class="pricing-item pricing-card disabled features-item ja-animate" data-animation="move-from-bottom" data-delay="item-0" >
-                            <div class="pricing-deco">
-                                <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" y="0px">
-                                    <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
-                                    <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
-                                </svg>
-                                <div class="pricing-price"><span class="pricing-currency">$</span>18<span class="pricing-period">/ month</span></div>
-                                <h3 class="pricing-title">Small Business</h3>
-                            </div>
-                            <ul class="pricing-feature-list">
-                                <li class="pricing-feature">Invite up to 15 Users</li>
-                                <!-- <li class="pricing-feature">&nbsp;</li> -->
-                                <!-- <li class="pricing-feature">• 7 Datastores</li> -->
-                                <!-- <li class="pricing-feature">• 3 Documents Credits</li> -->
-                                <!-- <li class="pricing-feature">• Admin & User Managment</li> -->
-                            </ul>
-                            <a href="http://login.hstles.com/" class="pricing-action">
-                                <button class="pricing-action">Coming Soon</button>
-                            </a>
-                        </div>
-                        <div class="pricing-item pricing-card features-item ja-animate pricing__item--featured" data-animation="move-from-bottom" data-delay="item-1" >
-                            <div class="pricing-deco" style="background: linear-gradient(135deg,#549ce3,#4696e5)">
-                                <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" y="0px">
-                                    <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
-                                    <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
-                                </svg>
-                                <div class="pricing-price"><span class="pricing-currency">$</span>48<span class="pricing-period">/ month</span></div>
-                                <h3 class="pricing-title">Corporte</h3>
-                            </div>
-                            <ul class="pricing-feature-list">
-                                <li class="pricing-feature">Invite up to 50 Users</li>
-                                <!-- <li class="pricing-feature">&nbsp;</li> -->
-                                <!-- <li class="pricing-feature">• 9 Datastores</li> -->
-                                <!-- <li class="pricing-feature">• 10 Documents Credits</li> -->
-                                <!-- <li class="pricing-feature">• Admin & User Managment</li> -->
-                                <!-- <li class="pricing-feature">• User Management & Permissions</li> -->
-                            </ul>
-                            <a href="" class="pricing-action">
-                                <button class="pricing-action disabled">Coming Soon</button>
-                            </a>
-                        </div>
-                        <div class="pricing-item pricing-card disabled features-item ja-animate" data-animation="move-from-bottom" data-delay="item-2" >
-                            <div class="pricing-deco">
-                                <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px" id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100" width="300px" x="0px" xml:space="preserve" y="0px">
-                                    <path class="deco-layer deco-layer--1" d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--2" d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" fill="#FFFFFF" opacity="0.6"></path>
-                                    <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
-                                    <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
-                                </svg>
-                                <div class="pricing-price"><span class="pricing-currency">$</span>98<span class="pricing-period">/ month</span></div>
-                                <h3 class="pricing-title">Enterprise</h3>
-                            </div>
-                            <ul class="pricing-feature-list">
-                                <li class="pricing-feature">Invite 100 Users & Sync from 365</li>
-                                <!-- <li class="pricing-feature">or sync users from 365</li> -->
-                                <!-- <li class="pricing-feature">&nbsp;</li> -->
-                                <!-- <li class="pricing-feature">• 20 Datastores</li> -->
-                                <!-- <li class="pricing-feature">• 20 Documents Credits</li> -->
-                                <!-- <li class="pricing-feature">• Admin & User Managment</li> -->
-                            </ul>
-                            <a href="http://files.hstles.com/plans" class="pricing-action">
-                                <button class="pricing-action">Coming Soon</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="add-ons">
-                        <h4>Modular Add-Ons</h4>
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Service</th>
-                                    <th>Pricing</th>
-                                    <th>Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>Files</b></td>
-                                    <td>$15 (AUD) per datastore per month<br> + $2 per user added to a datastore</td>
-                                    <td>Unlimited storage with advanced file sharing.</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Send</b></td>
-                                    <td>Hosted <i>- cloud hosted emails</i><br> $3 (AUD) per mailbox per month <br><br>Intergrated <i>- 365 intergrated mailbox access managment</i><br> $1 per user added to a 365 mailbox</td>
-                                    <td>OAuth email solution. <i><b>Coming Soon</b></i></td>
-                                </tr>
-                                <tr>
-                                    <td><b>Sign</b></td>
-                                    <td>¢5 (AUD) per email + ¢5 document to be signed.<br>¢5 (AUD) per text notification.</td>
-                                    <td>Digital signing & document processing. <i><b>Coming Soon</b></i></td>
-                                </tr>
-                                <tr>
-                                    <td><b>Sigil</b></td>
-                                    <td>¢2 (AUD) per signature added to email</td>
-                                    <td>Add email signatures and custom branding. <i><b>Coming Soon</b></i></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="col-auto px-3 py-2">
+                        <i class="fas fa-lock me-2"></i>
+                        <span class="small"><strong>ACSC Essential Eight</strong></span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
+        
         <ul class="icons">
             <li><a href="https://github.com/HSTLES" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="https://status.hstles.com/" class="icon solid fa-cloud"><span class="label">Service Status</span></a></li>
-            <li><a href="privacy.html" class="icon solid fa-user-secret"><span class="label">Privacy Policy</span></a></li>
+            <li><a href="https://status.hstles.com/" target="_blank" class="icon solid fa-chart-line"><span class="label">Service Status</span></a></li>
+            <li><a href="#privacy" class="icon solid fa-user-secret"><span class="label">Privacy Policy</span></a></li>
         </ul>
-        <p class="copyright">&copy; HSTLES.<a href=""></a></p>
+        <p class="copyright">&copy; HSTLES. Australian-based. Privacy Act 1988 compliant.</p>
     </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <style>
+        /* Remove default body margins */
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        /* Page content positioning */
+        #page-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Navbar - 60% opacity with #3E97FF hover */
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 10000 !important;
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100% !important;
+            background-color: rgba(130, 130, 130, 0.6) !important; /* 60% opacity */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.3em;
+        }
+        .navbar-brand i {
+            padding-left: 0.3em;
+            padding-right: 0.3em;
+        }
+        .navbar-nav .nav-link {
+            margin: 0 0.5em;
+            transition: color 0.2s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #3E97FF !important; /* Primary blue hover */
+        }
+        
+        /* Dropdown menu styling - seamless with navbar */
+        .navbar-nav .dropdown-toggle {
+            color: rgba(255, 255, 255, 0.55) !important;
+        }
+        .navbar-nav .dropdown-toggle:hover {
+            color: #3E97FF !important;
+        }
+        .navbar-nav .dropdown-toggle::after {
+            opacity: 0.55;
+            margin-left: 0.3em;
+        }
+        .navbar-nav .show > .nav-link {
+            color: rgba(255, 255, 255, 0.55) !important;
+        }
+        
+        .dropdown-menu {
+            background-color: rgba(130, 130, 130, 0.6) !important;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            margin-top: 1px;
+            box-shadow: none;
+            min-width: 100%;
+        }
+        .dropdown-item {
+            color: rgba(255, 255, 255, 0.55);
+            padding: 0.625rem 1rem;
+            transition: color 0.2s;
+            font-weight: 400;
+            white-space: nowrap;
+        }
+        .dropdown-item:hover {
+            background-color: transparent;
+            color: #3E97FF !important;
+        }
+        .dropdown-item:active {
+            background-color: transparent;
+            color: #3E97FF !important;
+        }
+        .dropdown-divider {
+            border-color: rgba(255, 255, 255, 0.05);
+            margin: 0;
+            opacity: 1;
+        }
+        
+        /* Back to top button - no border, blue hover */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            /* color: #fff; */
+            border: none !important;
+            outline: none !important;
+            border-radius: 8px;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            z-index: 1000;
+            transition: all 0.3s;
+            padding: 0;
+        }
+        .back-to-top i {
+            color: #828282;
+        }
+        .back-to-top:hover i {
+            color: #3E97FF !important;
+        }
+        .back-to-top:hover {
+            transform: translateY(-3px);
+        }
+        .back-to-top:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        .back-to-top.show { display: flex; }
+        
+        /* Trust Indicators - consistent gray */
+        .trust-indicators {
+            background-color: rgba(255, 255, 255, 0.03);
+            padding: 1.2em 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .trust-indicators i {
+            opacity: 0.8;
+            font-size: 1.1em;
+        }
+        .trust-indicators .small {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.9em;
+        }
+        .trust-indicators a {
+            transition: color 0.2s ease;
+        }
+        .trust-indicators a:hover {
+            opacity: 0.8;
+        }
+        .trust-indicators .col-auto {
+            display: inline-flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+    </style>
+    
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -274,7 +264,43 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-	<!-- <script src="assets/js/anime.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/page-loader.js"></script>
+    
+    <!-- Back to Top Functionality -->
+    <script>
+        (function() {
+            function initBackToTop() {
+                const backToTop = document.getElementById('backToTop');
+                if (!backToTop) return;
+                
+                // Show/hide on scroll
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTop.classList.add('show');
+                    } else {
+                        backToTop.classList.remove('show');
+                    }
+                });
+                
+                console.log('Back-to-top button initialized');
+            }
+            
+            // Initialize when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initBackToTop);
+            } else {
+                initBackToTop();
+            }
+        })();
+        
+        // Smooth scroll function for onclick handler
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>

@@ -1863,23 +1863,25 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
-		input[type="submit"].icon,
-		input[type="reset"].icon,
-		input[type="button"].icon,
-		button.icon,
-		.button.icon {
-			padding-left: 1.35em;
-		}
+	input[type="submit"].icon,
+	input[type="reset"].icon,
+	input[type="button"].icon,
+	button.icon,
+	.button.icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 1;
+	}
 
-			input[type="submit"].icon:before,
-			input[type="reset"].icon:before,
-			input[type="button"].icon:before,
-			button.icon:before,
-			.button.icon:before {
-				margin-right: 0.5em;
-			}
-
-		input[type="submit"].fit,
+		input[type="submit"].icon:before,
+		input[type="reset"].icon:before,
+		input[type="button"].icon:before,
+		button.icon:before,
+		.button.icon:before {
+			margin-right: 0.5em;
+			line-height: 1;
+		}		input[type="submit"].fit,
 		input[type="reset"].fit,
 		input[type="button"].fit,
 		button.fit,
@@ -2469,6 +2471,8 @@ input, select, textarea {
 		ul.actions li {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
+			display: flex;
+			align-items: center;
 		}
 
 		ul.actions.special {
@@ -2619,24 +2623,37 @@ input, select, textarea {
 
 		}
 
-		ul.icons.labeled li {
-			margin: 1em 0;
-			padding: 0 2em 0 0;
+	ul.icons.labeled {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	ul.icons.labeled li {
+		margin: 1em 2em;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+		ul.icons.labeled li .icon {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 
-			ul.icons.labeled li .icon:before {
-				vertical-align: middle;
-				font-size: 2.25rem;
-				margin-right: 0.5em;
-			}
+		ul.icons.labeled li .icon:before {
+			font-size: 2.25rem;
+			margin-bottom: 0.5em;
+		}
 
-			ul.icons.labeled li .icon .labels {
-				display: inline-block;
-				vertical-align: middle;
-				color: #999999;
-			}
-
-	@media screen and (max-width: 736px) and (orientation: portrait) {
+		ul.icons.labeled li .icon .labels {
+			display: block;
+			color: #999999;
+		}	@media screen and (max-width: 736px) and (orientation: portrait) {
 
 		ul.icons.labeled {
 			text-align: left;
@@ -2677,6 +2694,11 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	section.special > *, article.special > * {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	header p {
 		position: relative;
 		margin: 0 0 1.5em 0;
@@ -2714,14 +2736,6 @@ input, select, textarea {
 		margin: 0 0 2.5em 0;
 		text-align: center;
 	}
-
-		header.major:after {
-			content: '';
-			border-bottom: solid 2px #e6e6e6;
-			display: block;
-			width: 4em;
-			margin: 2em auto 0 auto;
-		}
 
 		@media screen and (max-width: 736px) {
 

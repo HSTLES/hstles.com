@@ -20,6 +20,23 @@
 			}, 100);
 		});
 
+	// Rotate headers on page load - show only one at random.
+		var $headers = $('.rotating-header');
+		
+		if ($headers.length > 0) {
+			// Pick a random header index
+			var randomIndex = Math.floor(Math.random() * $headers.length);
+			
+			// Hide all headers except the randomly selected one
+			$headers.each(function(index) {
+				if (index === randomIndex) {
+					$(this).show();
+				} else {
+					$(this).hide();
+				}
+			});
+		}
+
 	// Mobile?
 		if (browser.mobile)
 			$body.addClass('is-mobile');
