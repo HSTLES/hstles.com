@@ -1,4 +1,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+/* @import url(//fonts.googleapis.com/css?family=Lato:300:400); */
+
 /* @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css); */
 
@@ -3647,7 +3650,7 @@ input, select, textarea {
 		/* background-color: #4696e5; */
 		background-color: #3E97FF;
 		color: #d1e5f9;
-		padding: 4.5em 0 2.5em 0 ;
+		/* padding: 4.5em 0 2.5em 0 ; */
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3935,6 +3938,7 @@ input, select, textarea {
 			#header {
 				height: auto;
 				min-height: 0;
+				padding: 4.5em 0 2.5em 0;
 			}
 
 				#header .content {
@@ -3953,7 +3957,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) and (orientation: portrait) {
 
 			#header {
-				padding: 6em 3em 4em 3em ;
+				padding: 6em 3em 1em 3em ;
 				-moz-flex-direction: column-reverse;
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
@@ -4015,7 +4019,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) and (orientation: portrait) {
 
 			#header {
-				padding: 3em 1.5em 1em 1.5em ;
+				/* padding: 3em 1.5em 1em 1.5em ; */
 			}
 
 				#header .image {
@@ -4044,7 +4048,7 @@ input, select, textarea {
 	@media screen and (max-width: 480px) and (orientation: portrait) {
 
 		#header {
-			padding: 2em 1em 0.1em 1em ;
+			/* padding: 2em 1em 0.1em 1em ; */
 		}
 
 	}
@@ -4401,8 +4405,6 @@ input, select, textarea {
 .pricing-palden .pricing-item--featured .pricing-deco {
 	padding: 5em 0 8.885em 0;
 }
-
-@import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
 .header {
 position:relative;

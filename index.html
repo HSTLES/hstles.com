@@ -119,8 +119,9 @@
         }
         
         /* Add top padding to first element in each page to prevent navbar overlap */
-        #page-content > :first-child {
-            padding-top: 120px;
+        #page-content > :first-child,
+        #page-content > header:first-child {
+            padding-top: 120px !important;
         }
         
         /* Navbar - 60% opacity with #3E97FF hover */
