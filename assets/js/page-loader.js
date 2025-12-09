@@ -15,6 +15,7 @@
             'home': 'pages/home.html',
             'branded-saas': 'pages/saas-branded.html',
             'custom-saas': 'pages/saas-custom.html',
+            'calculator': 'pages/calculator.html',
             'privacy': 'pages/privacy.html',
             'privacy-branded': 'pages/privacy-branded.html',
             'privacy-custom': 'pages/privacy-custom.html',
@@ -101,7 +102,30 @@
                 }
                 
                 this.contentContainer.innerHTML = content;
+                
+                // Execute any inline scripts that were injected
+                this.executeInlineScripts();
             }
+        },
+
+        executeInlineScripts: function() {
+            // Find all script tags in the content container and execute them
+            const scripts = this.contentContainer.querySelectorAll('script');
+            scripts.forEach(oldScript => {
+                const newScript = document.createElement('script');
+                
+                // Copy attributes
+                Array.from(oldScript.attributes).forEach(attr => {
+                    newScript.setAttribute(attr.name, attr.value);
+                });
+                
+                // Copy content
+                newScript.textContent = oldScript.textContent;
+                
+                // Replace old script with new one (this executes it)
+                oldScript.parentNode.replaceChild(newScript, oldScript);
+            });
+            console.log('PageLoader: Executed', scripts.length, 'inline scripts');
         },
 
         updateHeadMeta: function(metaHtml) {
