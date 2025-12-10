@@ -870,8 +870,8 @@
         L: 1.2,         // Lease recovery factor (120%)
         H: 9600,        // Annual infra + maintenance ($9,600/year)
         E: 2,           // Engagement fee multiplier (2 months)
-        // Estimated build days by complexity
-        buildDays: { low: 15, medium: 25, high: 45 },
+        // Estimated build days by complexity (realistic for sole Go developer)
+        buildDays: { low: 25, medium: 45, high: 80 },
         // User tier multipliers
         userMult: { U1: 1.0, U2: 1.3, U3: 1.7, U4: 2.2 },
         // SLA tier multipliers
