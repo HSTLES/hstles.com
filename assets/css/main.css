@@ -1975,7 +1975,7 @@ input, select, textarea {
 			input[type="button"].active:hover,
 			button.active:hover,
 			.button.active:hover {
-				background-color: #5ca3e8;
+				background-color: #4A8ED8;
 			}
 
 			input[type="submit"].active:active,
@@ -3218,7 +3218,7 @@ input, select, textarea {
 					.wrapper.style2 input[type="button"].active:hover,
 					.wrapper.style2 button.active:hover,
 					.wrapper.style2 .button.active:hover {
-						background-color: #5ca3e8;
+						background-color: #4A8ED8;
 					}
 
 					.wrapper.style2 input[type="submit"].active:active,
@@ -3432,7 +3432,7 @@ input, select, textarea {
 					.wrapper.style3 input[type="button"].active:hover,
 					.wrapper.style3 button.active:hover,
 					.wrapper.style3 .button.active:hover {
-						background-color: #5ca3e8;
+						background-color: #4A8ED8;
 					}
 
 					.wrapper.style3 input[type="submit"].active:active,
