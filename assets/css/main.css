@@ -1981,7 +1981,13 @@ input, select, textarea {
 			input[type="button"].active:hover,
 			button.active:hover,
 			.button.active:hover {
-				background-color: #4A8ED8;
+				background-color: #35C3A7;
+				color: #ffffff !important;
+			}
+
+			.button.active:hover i,
+			button.active:hover i {
+				color: #ffffff !important;
 			}
 
 			input[type="submit"].active:active,
@@ -3711,6 +3717,15 @@ input, select, textarea {
 				box-shadow: none;
 				background-color: #ffffff;
 				color: #2D77EE !important;
+			}
+
+			#header input[type="submit"].active:hover,
+			#header input[type="reset"].active:hover,
+			#header input[type="button"].active:hover,
+			#header button.active:hover,
+			#header .button.active:hover {
+				background-color: #35C3A7;
+				color: #ffffff !important;
 			}
 
 		#header label {
