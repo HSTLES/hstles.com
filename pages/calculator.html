@@ -230,10 +230,10 @@
                         <div class="cost-benefits">
                             <h5>What's Included</h5>
                             <ul>
+                                <li><i class="fas fa-gift"></i> Your engagement fee converts to <strong id="hstles-free-months">2</strong> months free after go-live</li>
                                 <li><i class="fas fa-check-circle"></i> SLA-backed uptime</li>
                                 <li><i class="fas fa-check-circle"></i> Managed hosting & security</li>
                                 <li><i class="fas fa-check-circle"></i> Predictable monthly cost</li>
-                                <li><i class="fas fa-check-circle"></i> Engagement fee → lease credit</li>
                             </ul>
                         </div>
                     </div>
@@ -395,6 +395,15 @@
     <header class="major">
         <h2>Common Questions</h2>
     </header>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3>How does the Engagement Fee credit work?</h3>
+            </header>
+            <p>Your Engagement Fee isn't a sunk cost - it becomes a credit toward your monthly lease! Once your solution goes live, the engagement fee is applied as <strong>payment for your first months of platform access</strong>. For example, if your engagement fee is $4,000 and your monthly lease is $2,000, your first 2 months are already paid. You're not paying twice for the same thing.</p>
+        </div>
+    </div>
     
     <div class="spotlight">
         <div class="content">
@@ -420,6 +429,24 @@
                 <h3>What happens if I want to leave HSTLES?</h3>
             </header>
             <p>We provide a full export of your data in standard formats. Your business logic is documented in the Scope Pack. You're never locked in - but we're confident you won't want to leave once you experience the service.</p>
+        </div>
+    </div>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3>Why compare Total Cost of Ownership?</h3>
+            </header>
+            <p>Most quotes only show the build cost. But software costs don't end at launch. You need to consider: <strong>hosting</strong> (infrastructure, scaling, backups), <strong>maintenance</strong> (security patches, bug fixes, monitoring), <strong>support</strong> (help desk, incident response), and <strong>enhancements</strong> (new features as your business grows). Our calculator shows you the complete picture over 3 years - the real cost of ownership.</p>
+        </div>
+    </div>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3>What's included in the HSTLES lease?</h3>
+            </header>
+            <p>Everything except new features: <strong>hosting</strong> on secure Australian infrastructure, <strong>backups</strong> and disaster recovery, <strong>monitoring</strong> and performance management, <strong>security patches</strong> and platform updates, <strong>SLA-backed support</strong> during your tier's hours, and <strong>defect fixes</strong> for anything that breaks. You get a working service, not just code to maintain.</p>
         </div>
     </div>
 </section>
@@ -736,6 +763,10 @@
     font-size: 0.85em;
 }
 
+.cost-benefits li strong {
+    /* color: #67c23a; */
+}
+
 /* Savings Summary */
 .savings-summary {
     background: rgba(62, 151, 255, 0.08);
@@ -1035,6 +1066,9 @@
         document.getElementById('hstles-hosting').textContent = formatCurrency(Math.round(hstles.leaseTotal));
         document.getElementById('hstles-enhancements').textContent = formatCurrency(hstlesEnhancements);
         document.getElementById('hstles-total').textContent = formatCurrency(Math.round(hstlesTotal));
+
+        // Update engagement fee credit visual
+        document.getElementById('hstles-free-months').textContent = hstles.engagementMonths;
 
         // Savings
         var saveFreelance = freelanceTotal - hstlesTotal;

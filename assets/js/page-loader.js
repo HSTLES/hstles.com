@@ -16,6 +16,7 @@
             'branded-saas': 'pages/saas-branded.html',
             'custom-saas': 'pages/saas-custom.html',
             'calculator': 'pages/calculator.html',
+            'security': 'pages/security.html',
             'privacy': 'pages/privacy.html',
             'privacy-branded': 'pages/privacy-branded.html',
             'privacy-custom': 'pages/privacy-custom.html',
