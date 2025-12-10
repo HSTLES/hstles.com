@@ -91,6 +91,12 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
+	}
+
+	/* Offset for fixed navbar when scrolling to anchors */
+	section[id], header[id], div[id] {
+		scroll-margin-top: 80px;
 	}
 
 	*, *:before, *:after {
