@@ -15,6 +15,7 @@
             'home': 'pages/home.html',
             'branded-saas': 'pages/saas-branded.html',
             'custom-saas': 'pages/saas-custom.html',
+            'it-services': 'pages/it-services.html',
             'calculator': 'pages/calculator.html',
             'security': 'pages/security.html',
             'privacy': 'pages/privacy.html',
@@ -209,6 +210,7 @@
                     const routeMap = {
                         'branded-saas': 'branded-saas',
                         'custom-saas': 'custom-saas',
+                        'it-services': 'it-services',
                         'index': 'home'
                     };
                     const route = routeMap[pageName] || pageName;
