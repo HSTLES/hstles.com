@@ -1,0 +1,15 @@
+# robots.txt for hstles.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hstles.com/sitemap.xml
+
+# Disallow admin/internal paths (if any)
+# Disallow: /assets/sass/
+
+# Allow CSS and images for rendering
+Allow: /assets/css/
+Allow: /assets/images/
+Allow: /assets/js/

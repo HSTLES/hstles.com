@@ -1,0 +1,1279 @@
+<!-- HEAD_META -->
+<title>HSTLES - Pricing Calculator | Compare Custom Development Costs</title>
+<meta name="description" content="Compare the true cost of custom development: freelance, agency, low-code vs HSTLES managed platform." />
+<meta name="keywords" content="software development cost, custom development pricing, freelance vs agency, development calculator" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hstles.com/calculator" />
+<meta property="og:title" content="Custom Development Pricing Calculator - Compare True Costs" />
+<meta property="og:description" content="Compare freelance, agency, low-code vs HSTLES managed platform over 3 years." />
+<meta property="og:image" content="https://hstles.com/assets/images/og-calculator.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://hstles.com/calculator" />
+<meta property="twitter:title" content="Custom Development Pricing Calculator" />
+<meta property="twitter:description" content="What does custom software really cost? Compare options over 3 years." />
+<meta property="twitter:image" content="https://hstles.com/assets/images/og-calculator.png" />
+<!-- /HEAD_META -->
+
+<!-- STRUCTURED_DATA -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "HSTLES Pricing Calculator",
+    "url": "https://hstles.com/calculator",
+    "description": "Compare the true cost of custom development across different approaches",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "AUD"
+    }
+}
+</script>
+<!-- /STRUCTURED_DATA -->
+
+<!-- CONTENT -->
+<!-- Header -->
+<header id="header">
+    <div class="content">
+        <h1><a href="">HSTLES</a></h1>
+        <p>Pricing Calculator</p>
+        <p>Compare the true cost of custom development<br>
+            over 3 years
+        </p>
+        <ul class="actions">
+            <li><a href="#calculator-section" class="button primary icon solid fa-calculator scrolly">Start Comparing</a></li>
+            <li><a href="#custom-saas" class="button icon solid fa-arrow-left">Back to Custom Solutions</a></li>
+        </ul>
+    </div>
+    <div class="hover content"><img src="/assets/css/images/hstles/box.svg" class="illustration"></div>
+</header>
+
+<!-- Calculator Section -->
+<section id="calculator-section" class="wrapper">
+    <header class="major">
+        <h2>What does custom software really cost?</h2>
+        <p>Most quotes only show the build. Here's the full picture over 3 years.</p>
+    </header>
+
+    <!-- Complexity Selector -->
+    <div class="calculator-container">
+        <div id="calculator-inputs" class="calculator-inputs">
+            <h3><i class="fas fa-sliders-h"></i> Describe Your Project</h3>
+            
+            <div class="calc-field">
+                <label for="complexity">Application Complexity</label>
+                <select id="complexity">
+                    <option value="low">Low - Simple workflows, 1-2 user roles, basic reporting</option>
+                    <option value="medium" selected>Medium - Multiple workflows, 3-5 roles, integrations</option>
+                    <option value="high">High - Complex logic, many roles, multiple integrations</option>
+                </select>
+            </div>
+
+            <div class="calc-field">
+                <label for="users">Number of Users</label>
+                <select id="users">
+                    <option value="U1" selected>1-25 users</option>
+                    <option value="U2">26-100 users</option>
+                    <option value="U3">101-500 users</option>
+                    <option value="U4">500+ users</option>
+                </select>
+            </div>
+
+            <div class="calc-field">
+                <label for="sla">Support Level Needed</label>
+                <select id="sla">
+                    <option value="standard" selected>Standard - Business hours support</option>
+                    <option value="enhanced">Enhanced - Extended hours, faster response</option>
+                    <option value="premium">Premium - 24/7 critical support</option>
+                </select>
+            </div>
+
+            <div class="button-wrapper">
+                <button id="calculate-btn" class="button primary icon solid fa-calculator">Calculate Comparison</button>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div id="results" class="calculator-results">
+            <div class="results-header">
+                <h3><i class="fas fa-chart-bar"></i> 3-Year Total Cost Comparison</h3>
+                <p class="results-params" id="results-params"></p>
+                <button id="recalculate-btn" class="button small icon solid fa-redo">Change Options</button>
+            </div>
+            
+            <div class="comparison-grid">
+                <!-- Freelance -->
+                <div class="comparison-card">
+                    <div class="card-header freelance">
+                        <i class="fas fa-user-tie"></i>
+                        <h4>Freelance Developer</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="cost-breakdown">
+                            <div class="cost-item">
+                                <span>Initial Build</span>
+                                <span id="freelance-build">$45,000</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Hosting (3 yrs)</span>
+                                <span id="freelance-hosting">$10,800</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Maintenance (3 yrs)</span>
+                                <span id="freelance-maintenance">$36,000</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Enhancements (est.)</span>
+                                <span id="freelance-enhancements">$24,000</span>
+                            </div>
+                        </div>
+                        <div class="cost-total">
+                            <span>3-Year Total</span>
+                            <span id="freelance-total">$115,800</span>
+                        </div>
+                        <div class="cost-risks">
+                            <h5>Risks</h5>
+                            <ul>
+                                <li><i class="fas fa-exclamation-triangle"></i> Developer availability</li>
+                                <li><i class="fas fa-exclamation-triangle"></i> No SLA guarantees</li>
+                                <li><i class="fas fa-exclamation-triangle"></i> You manage hosting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agency -->
+                <div class="comparison-card">
+                    <div class="card-header agency">
+                        <i class="fas fa-building"></i>
+                        <h4>Development Agency</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="cost-breakdown">
+                            <div class="cost-item">
+                                <span>Initial Build</span>
+                                <span id="agency-build">$90,000</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Hosting (3 yrs)</span>
+                                <span id="agency-hosting">$21,600</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Support Contract (3 yrs)</span>
+                                <span id="agency-maintenance">$54,000</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Enhancements (est.)</span>
+                                <span id="agency-enhancements">$48,000</span>
+                            </div>
+                        </div>
+                        <div class="cost-total">
+                            <span>3-Year Total</span>
+                            <span id="agency-total">$213,600</span>
+                        </div>
+                        <div class="cost-risks">
+                            <h5>Risks</h5>
+                            <ul>
+                                <li><i class="fas fa-exclamation-triangle"></i> High upfront cost</li>
+                                <li><i class="fas fa-exclamation-triangle"></i> Scope creep risk</li>
+                                <li><i class="fas fa-exclamation-triangle"></i> Ongoing retainer required</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Low-Code -->
+                <div class="comparison-card">
+                    <div class="card-header lowcode">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h4>Low-Code / No-Code</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="cost-breakdown">
+                            <div class="cost-item">
+                                <span>Initial Setup</span>
+                                <span id="lowcode-build">$15,000</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Platform Fees (3 yrs)</span>
+                                <span id="lowcode-hosting">$32,400</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Consultant Support (3 yrs)</span>
+                                <span id="lowcode-maintenance">$18,000</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Workarounds & Customisation</span>
+                                <span id="lowcode-enhancements">$12,000</span>
+                            </div>
+                        </div>
+                        <div class="cost-total">
+                            <span>3-Year Total</span>
+                            <span id="lowcode-total">$77,400</span>
+                        </div>
+                        <div class="cost-risks">
+                            <h5>Risks</h5>
+                            <ul>
+                                <li><i class="fas fa-exclamation-triangle"></i> Platform limitations</li>
+                                <li><i class="fas fa-exclamation-triangle"></i> Vendor lock-in</li>
+                                <li><i class="fas fa-exclamation-triangle"></i> May not fit complex needs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HSTLES -->
+                <div class="comparison-card featured">
+                    <div class="card-header hstles">
+                        <i class="fas fa-cube"></i>
+                        <h4>HSTLES</h4>
+                        <span class="badge">Recommended</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="cost-breakdown">
+                            <div class="cost-item">
+                                <span>Engagement Fee</span>
+                                <span id="hstles-build">$8,000</span>
+                            </div>
+                            <div class="cost-item highlight">
+                                <span>Platform Lease (3 yrs)</span>
+                                <span id="hstles-hosting">$43,200</span>
+                            </div>
+                            <div class="cost-item included">
+                                <span>Hosting & Maintenance</span>
+                                <span><i class="fas fa-check"></i> Included</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>Enhancements (est.)</span>
+                                <span id="hstles-enhancements">$12,000</span>
+                            </div>
+                        </div>
+                        <div class="cost-total featured">
+                            <span>3-Year Total</span>
+                            <span id="hstles-total">$63,200</span>
+                        </div>
+                        <div class="cost-benefits">
+                            <h5>What's Included</h5>
+                            <ul>
+                                <li><i class="fas fa-gift"></i> Your engagement fee converts to <strong id="hstles-free-months">2</strong> months free after go-live</li>
+                                <li><i class="fas fa-check-circle"></i> SLA-backed uptime</li>
+                                <li><i class="fas fa-check-circle"></i> Managed hosting & security</li>
+                                <li><i class="fas fa-check-circle"></i> Predictable monthly cost</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Savings Summary -->
+            <div class="savings-summary">
+                <h3>Your Potential Savings with HSTLES</h3>
+                <div class="savings-grid">
+                    <div class="saving-item">
+                        <span class="saving-label">vs Freelance</span>
+                        <span class="saving-amount" id="save-freelance">$52,600</span>
+                        <span class="saving-percent" id="save-freelance-pct">(45% less)</span>
+                    </div>
+                    <div class="saving-item">
+                        <span class="saving-label">vs Agency</span>
+                        <span class="saving-amount" id="save-agency">$150,400</span>
+                        <span class="saving-percent" id="save-agency-pct">(70% less)</span>
+                    </div>
+                    <div class="saving-item">
+                        <span class="saving-label">vs Low-Code</span>
+                        <span class="saving-amount" id="save-lowcode">$14,200</span>
+                        <span class="saving-percent" id="save-lowcode-pct">(18% less)</span>
+                    </div>
+                </div>
+                <div id="freelance-warning" class="competitor-warning" style="display: none;"></div>
+                <div id="agency-warning" class="competitor-warning" style="display: none;"></div>
+                <div id="lowcode-warning" class="competitor-warning" style="display: none;"></div>
+            </div>
+
+            <!-- CTA -->
+            <div class="calculator-cta">
+                <p>These are estimates based on typical projects. Your actual costs depend on your specific requirements.</p>
+                <ul class="actions special">
+                    <li><a href="https://support.hstles.com/saas" class="button primary icon solid fa-comments">Get a Real Quote</a></li>
+                    <li><a href="#custom-saas" class="button icon solid fa-info-circle">Learn About Our Process</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Assumptions -->
+<section id="assumptions" class="wrapper style2">
+    <header class="major">
+        <h2>How We Calculate</h2>
+        <p>Transparent assumptions based on Australian market rates</p>
+    </header>
+    
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Factor</th>
+                    <th>Freelance</th>
+                    <th>Agency</th>
+                    <th>Low-Code</th>
+                    <th>HSTLES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Initial Build</strong></td>
+                    <td>$35k-$100k<br><small>(complexity dependent)</small></td>
+                    <td>$70k-$200k<br><small>(typically 2x freelance)</small></td>
+                    <td>$12k-$50k<br><small>(consultant setup + config)</small></td>
+                    <td>Engagement fee<br><small>(≈2 months lease, credited)</small></td>
+                </tr>
+                <tr>
+                    <td><strong>Monthly Hosting</strong></td>
+                    <td>$200-$500/mo<br><small>+ scales with users (1.5-4x)</small></td>
+                    <td>$400-$800/mo<br><small>+ scales with users (1.5-4x)</small></td>
+                    <td>$300-$600/mo base<br><small>+ $15-$50/user/mo</small></td>
+                    <td>Included in lease<br><small>(no per-user fees)</small></td>
+                </tr>
+                <tr>
+                    <td><strong>Ongoing Maintenance</strong></td>
+                    <td>$800-$1,500/mo<br><small>+ scales with users (1.3-2.5x)</small></td>
+                    <td>$1,200-$2,000/mo<br><small>+ scales with users (1.3-2.5x)</small></td>
+                    <td>$500-$1,200/mo<br><small>(consultant support)</small></td>
+                    <td>Included in lease<br><small>(SLA-backed support)</small></td>
+                </tr>
+                <tr>
+                    <td><strong>User Scaling</strong></td>
+                    <td>Infrastructure costs<br>increase with users</td>
+                    <td>Infrastructure costs<br>increase with users</td>
+                    <td>Per-user platform fees<br>compound at scale</td>
+                    <td>Flat tier-based pricing<br><small>(U1-U4 multipliers)</small></td>
+                </tr>
+                <tr>
+                    <td><strong>Enhancement Rate</strong></td>
+                    <td>$100-150/hr</td>
+                    <td>$180-250/hr</td>
+                    <td>Limited by platform</td>
+                    <td>Bespoke quotes</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <header class="major hidden" style="margin-top: 2em;">
+        <h3>HSTLES Pricing Model</h3>
+        <p>Our lease pricing is calculated using transparent formulas</p>
+    </header>
+    
+    <div class="table-wrapper hidden">
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Formula / Value</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Build Days</strong></td>
+                    <td>Low: 15 / Medium: 25 / High: 45</td>
+                    <td>Estimated based on complexity</td>
+                </tr>
+                <tr>
+                    <td><strong>Dev Day Rate</strong></td>
+                    <td>$1,200/day</td>
+                    <td>Blended internal rate</td>
+                </tr>
+                <tr>
+                    <td><strong>Lease Recovery</strong></td>
+                    <td>Build Cost × 1.2</td>
+                    <td>120% of build recovered over term</td>
+                </tr>
+                <tr>
+                    <td><strong>Infra + Maintenance</strong></td>
+                    <td>$9,600/year</td>
+                    <td>Hosting, backups, monitoring, support</td>
+                </tr>
+                <tr>
+                    <td><strong>User Tier Multipliers</strong></td>
+                    <td>U1: 1.0 / U2: 1.3 / U3: 1.7 / U4: 2.2</td>
+                    <td>1-25 / 26-100 / 101-500 / 500+ users</td>
+                </tr>
+                <tr>
+                    <td><strong>SLA Multipliers</strong></td>
+                    <td>Standard: 1.0 / Enhanced: 1.2 / Premium: 1.5</td>
+                    <td>Support level affects pricing</td>
+                </tr>
+                <tr>
+                    <td><strong>Engagement Fee</strong></td>
+                    <td>≈ 2 months of lease</td>
+                    <td>Credited as first months after go-live</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="wrapper">
+    <header class="major">
+        <h2>Common Questions</h2>
+    </header>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3>How does the Engagement Fee credit work?</h3>
+            </header>
+            <p>Your Engagement Fee isn't a sunk cost - it becomes a credit toward your monthly lease! Once your solution goes live, the engagement fee is applied as <strong>payment for your first months of platform access</strong>. For example, if your engagement fee is $4,000 and your monthly lease is $2,000, your first 2 months are already paid. You're not paying twice for the same thing.</p>
+        </div>
+    </div>
+    
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3>Why is HSTLES cheaper than a freelancer?</h3>
+            </header>
+            <p>We've built the platform once and reuse it across clients. You're not paying for us to build authentication, hosting infrastructure, or security from scratch every time. You're paying for your specific business logic on top of a proven foundation.</p>
+        </div>
+    </div>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3>What if my needs are too complex for low-code?</h3>
+            </header>
+            <p>That's exactly our sweet spot. Low-code works great for simple apps, but hits walls with complex business logic, custom integrations, or specific compliance requirements. HSTLES gives you real custom development without the traditional cost.</p>
+        </div>
+    </div>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3>What happens if I want to leave HSTLES?</h3>
+            </header>
+            <p>We provide a full export of your data in standard formats. Your business logic is documented in the Scope Pack. You're never locked in - but we're confident you won't want to leave once you experience the service.</p>
+        </div>
+    </div>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3>Why compare Total Cost of Ownership?</h3>
+            </header>
+            <p>Most quotes only show the build cost. But software costs don't end at launch. You need to consider: <strong>hosting</strong> (infrastructure, scaling, backups), <strong>maintenance</strong> (security patches, bug fixes, monitoring), <strong>support</strong> (help desk, incident response), and <strong>enhancements</strong> (new features as your business grows). Our calculator shows you the complete picture over 3 years - the real cost of ownership.</p>
+        </div>
+    </div>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3>What's included in the HSTLES lease?</h3>
+            </header>
+            <p>Everything except new features: <strong>hosting</strong> on secure Australian infrastructure, <strong>backups</strong> and disaster recovery, <strong>monitoring</strong> and performance management, <strong>security patches</strong> and platform updates, <strong>SLA-backed support</strong> during your tier's hours, and <strong>defect fixes</strong> for anything that breaks. You get a working service, not just code to maintain.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="wrapper style2 special">
+    <header class="major">
+        <h2>Ready to see what HSTLES would cost for your project?</h2>
+        <p>Book a free consultation and we'll scope it out together.<br>No obligation, no sales pressure.</p>
+    </header>
+    <ul class="actions special">
+        <li><a href="https://support.hstles.com/saas" class="button primary icon solid fa-comments">Schedule Free Consultation</a></li>
+    </ul>
+</section>
+
+<!-- Calculator Styles -->
+<style>
+.calculator-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+/* Input Section */
+.calculator-inputs {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 2em 2.5em;
+    max-width: 480px;
+    margin: 0 auto 2em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.calculator-inputs.hidden {
+    display: none;
+}
+
+.calculator-inputs h3 {
+    margin-bottom: 1.5em;
+    color: #3486F1;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.calculator-inputs h3 i {
+    margin-right: 0.5em;
+}
+
+.calc-field {
+    margin-bottom: 1.25em !important;
+    display: block !important;
+}
+
+.calc-field:last-of-type {
+    margin-bottom: 1.5em !important;
+}
+
+.calc-field label {
+    display: block !important;
+    margin-bottom: 0.5em !important;
+    font-weight: 600 !important;
+    font-size: 0.9em !important;
+    color: #828282 !important;
+}
+
+.calc-field select {
+    width: 100% !important;
+    padding: 0.75em 2.5em 0.75em 1em !important;
+    border-radius: 6px !important;
+    border: 1px solid #e6e6e6 !important;
+    background-color: #fff !important;
+    color: #828282 !important;
+    font-size: 0.9em !important;
+    cursor: pointer !important;
+    transition: border-color 0.2s, box-shadow 0.2s !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23828282' d='M6 8L1 3h10z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 1em center !important;
+    height: auto !important;
+    line-height: 1.4 !important;
+}
+
+.calc-field select:hover {
+    border-color: #43CCBD !important;
+}
+
+.calc-field select:focus {
+    outline: none !important;
+    border-color: #43CCBD !important;
+    box-shadow: 0 0 0 3px rgba(53, 195, 167, 0.15) !important;
+}
+
+.calc-field select option {
+    background: #fff !important;
+    color: #828282 !important;
+    padding: 0.5em !important;
+}
+
+.calculator-inputs .button-wrapper {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+#calculate-btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.85em 2em;
+    font-size: 0.95em;
+    cursor: pointer;
+    background-color: #3486F1;
+    color: #fff !important;
+    border: none;
+    box-shadow: none;
+}
+
+#calculate-btn:hover {
+    background-color: #43CCBD;
+    transform: translateY(-1px);
+}
+
+/* Results Section */
+.calculator-results {
+    display: none;
+}
+
+.calculator-results.visible {
+    display: block;
+}
+
+.results-header {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.results-header h3 {
+    color: #828282;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.results-header h3 i {
+    margin-right: 0.5em;
+    color: #3486F1;
+}
+
+.results-header .results-params {
+    color: #999;
+    font-size: 0.85em;
+    margin-bottom: 0.5em;
+}
+
+#recalculate-btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-size: 0.85em;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+
+/* Comparison Grid */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin-bottom: 1.5em;
+}
+
+.comparison-card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.comparison-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-card.featured {
+    border: 2px solid #3486F1;
+    box-shadow: 0 2px 12px rgba(45, 119, 238, 0.2);
+}
+
+.card-header {
+    padding: 1em 0.75em;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.card-header i {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+    display: block;
+    opacity: 0.9;
+}
+
+.card-header h4 {
+    margin: 0;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Softer, muted card header colors */
+.card-header.freelance { background: #8b9dc3; }
+.card-header.agency { background: #d4838f; }
+.card-header.lowcode { background: #d4a84b; }
+.card-header.hstles { background: #3486F1; }
+
+.card-header .badge {
+    position: absolute;
+    top: 0.35em;
+    right: 0.35em;
+    background: #fff;
+    color: #3486F1;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+    font-size: 0.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.cost-breakdown {
+    margin-bottom: 0.5em;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.35em 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.8em;
+}
+
+.cost-item span:first-child {
+    flex: 1;
+    padding-right: 0.5em;
+    color: #999;
+}
+
+.cost-item span:last-child {
+    font-weight: 600;
+    color: #828282;
+    white-space: nowrap;
+}
+
+.cost-item.included span:last-child {
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+.cost-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em 0 0.4em;
+    font-size: 0.95em;
+    font-weight: 700;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 0.4em;
+    color: #828282;
+}
+
+.cost-total.featured {
+    color: #3486F1;
+}
+
+.cost-risks, .cost-benefits {
+    margin-top: 0.6em;
+    padding-top: 0.6em;
+    border-top: 1px solid #f0f0f0;
+}
+
+.cost-risks h5, .cost-benefits h5 {
+    font-size: 0.75em;
+    margin-bottom: 0.3em;
+    color: #999;
+    font-weight: 600;
+}
+
+.cost-risks ul, .cost-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.75em;
+}
+
+.cost-risks li, .cost-benefits li {
+    padding: 0.2em 0;
+    color: #999;
+}
+
+.cost-risks li i {
+    color: #e6a23c;
+    margin-right: 0.35em;
+    font-size: 0.85em;
+}
+
+.cost-benefits li i {
+    color: #67c23a;
+    margin-right: 0.35em;
+    font-size: 0.85em;
+}
+
+.cost-benefits li strong {
+    /* color: #67c23a; */
+}
+
+/* Savings Summary */
+.savings-summary {
+    background: rgba(62, 151, 255, 0.08);
+    border: 1px solid rgba(62, 151, 255, 0.2);
+    border-radius: 6px;
+    padding: 1.25em 2em;
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.savings-summary h3 {
+    margin-bottom: 0.75em;
+    font-size: 1.1em;
+    color: #828282;
+    font-weight: 600;
+}
+
+.savings-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    flex-wrap: wrap;
+}
+
+.saving-item {
+    text-align: center;
+}
+
+.saving-label {
+    display: block;
+    font-size: 0.8em;
+    color: #999;
+    margin-bottom: 0.2em;
+}
+
+.saving-amount {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #3486F1;
+}
+
+.saving-percent {
+    display: block;
+    font-size: 0.75em;
+    color: #67c23a;
+}
+
+/* Competitor Warning */
+.competitor-warning {
+    margin-top: 1.5em;
+    padding: 1em 1.25em;
+    background: #fff8e6;
+    border: 1px solid #e6a23c;
+    border-radius: 6px;
+    color: #8a6d3b;
+    font-size: 0.85em;
+    text-align: left;
+}
+
+.competitor-warning i {
+    color: #e6a23c;
+    margin-right: 0.5em;
+}
+
+.competitor-warning strong {
+    color: #8a6d3b;
+}
+
+.competitor-warning ul {
+    margin: 0.5em 0 0 1.5em;
+    padding: 0;
+    list-style: disc;
+}
+
+.competitor-warning li {
+    margin-bottom: 0.3em;
+    line-height: 1.4;
+}
+
+.competitor-warning + .competitor-warning {
+    margin-top: 0.75em;
+}
+
+/* CTA */
+.calculator-cta {
+    text-align: center;
+    padding: 1.25em;
+    background: rgba(144, 144, 144, 0.05);
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    margin-top: 1.5em;
+}
+
+.calculator-cta p {
+    color: #999;
+    margin-bottom: 0.75em;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .comparison-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .savings-grid {
+        gap: 1.5em;
+    }
+    
+    .calculator-inputs {
+        padding: 1.5em;
+    }
+}
+</style>
+
+<!-- Calculator Script -->
+<script>
+// Calculator functionality using event delegation for SPA compatibility
+(function() {
+    // ============================================
+    // HSTLES Rate Card A - Build-Cost → Lease Model
+    // ============================================
+    var hstlesConfig = {
+        R: 1200,        // Dev day rate ($1,200/day)
+        L: 1.2,         // Lease recovery factor (120%)
+        H: 9600,        // Annual infra + maintenance ($9,600/year)
+        // Estimated build days by complexity (realistic for sole Go developer)
+        buildDays: { low: 25, medium: 45, high: 80 },
+        // Engagement fee as % of build cost (lower than full build, committed upfront)
+        engagementPct: { low: 0.15, medium: 0.12, high: 0.10 },
+        // User tier multipliers
+        userMult: { U1: 1.0, U2: 1.3, U3: 1.7, U4: 2.2 },
+        // SLA tier multipliers
+        slaMult: { standard: 1.0, enhanced: 1.2, premium: 1.5 }
+    };
+
+    // Competitor pricing data (market estimates)
+    var pricing = {
+        build: {
+            low: { freelance: 35000, agency: 70000, lowcode: 12000 },
+            medium: { freelance: 55000, agency: 120000, lowcode: 25000 },
+            high: { freelance: 100000, agency: 200000, lowcode: 50000 }
+        },
+        hosting: {
+            low: { freelance: 200, agency: 400, lowcode: 300 },
+            medium: { freelance: 300, agency: 600, lowcode: 400 },
+            high: { freelance: 500, agency: 800, lowcode: 600 }
+        },
+        maintenance: {
+            low: { freelance: 800, agency: 1200, lowcode: 500 },
+            medium: { freelance: 1000, agency: 1500, lowcode: 800 },
+            high: { freelance: 1500, agency: 2000, lowcode: 1200 }
+        },
+        enhancements: {
+            low: { freelance: 18000, agency: 35000, lowcode: 10000, hstles: 8000 },
+            medium: { freelance: 30000, agency: 60000, lowcode: 18000, hstles: 12000 },
+            high: { freelance: 50000, agency: 100000, lowcode: 30000, hstles: 18000 }
+        }
+    };
+
+    // Low-Code per-user platform fees (monthly) - typical for Bubble, Retool, etc.
+    var lowcodeUserFees = {
+        U1: 15,    // $15/user/month for small tier (often included in base)
+        U2: 25,    // $25/user/month as you scale
+        U3: 35,    // $35/user/month for larger deployments
+        U4: 50     // $50/user/month for enterprise (often custom pricing)
+    };
+    
+    // Average user count per tier for estimation
+    var avgUsers = { U1: 15, U2: 60, U3: 250, U4: 750 };
+    
+    // Infrastructure scaling multipliers for Freelance/Agency (more users = more infrastructure)
+    var infraMult = {
+        U1: 1.0,   // Base infrastructure
+        U2: 1.5,   // Need better servers, more bandwidth
+        U3: 2.5,   // Load balancers, CDN, database scaling
+        U4: 4.0    // Enterprise infrastructure, HA, multi-region
+    };
+    
+    // Maintenance/support scaling for Freelance/Agency (more users = more support burden)
+    var supportMult = {
+        U1: 1.0,   // Base support load
+        U2: 1.3,   // More tickets, more complexity
+        U3: 1.8,   // Dedicated support time needed
+        U4: 2.5    // Near full-time support required
+    };
+
+    // Calculate HSTLES pricing using Rate Card A formulas
+    function calculateHSTLES(complexity, userTier, sla, termMonths) {
+        var cfg = hstlesConfig;
+        
+        // Step A1: Build cost (based on complexity/days)
+        var buildDays = cfg.buildDays[complexity];
+        var buildCost = buildDays * cfg.R;
+        
+        // Step A2: Lease recovery amount
+        var leaseRecovery = buildCost * cfg.L;
+        
+        // Step A3: Infra + maintenance over term
+        var infraOverTerm = cfg.H * (termMonths / 12);
+        
+        // Step A4: Base monthly before multipliers
+        var baseMonthly = (leaseRecovery + infraOverTerm) / termMonths;
+        
+        // Step A5: Final monthly lease with multipliers
+        var userMult = cfg.userMult[userTier];
+        var slaMult = cfg.slaMult[sla];
+        var monthlyLease = baseMonthly * userMult * slaMult;
+        
+        // Engagement fee based on build cost (not monthly lease)
+        // More complex projects = higher fee, but converts to more free months
+        var engagementPct = cfg.engagementPct[complexity];
+        var engagementFee = buildCost * engagementPct;
+        
+        // Round to nearest $500 for cleaner quotes
+        engagementFee = Math.round(engagementFee / 500) * 500;
+        
+        // Calculate how many months this covers
+        var engagementMonths = Math.round(engagementFee / monthlyLease);
+        // Ensure at least 1 month credit
+        engagementMonths = Math.max(1, engagementMonths);
+        
+        return {
+            buildCost: buildCost,
+            monthlyLease: monthlyLease,
+            leaseTotal: monthlyLease * termMonths,
+            engagementFee: engagementFee,
+            engagementMonths: engagementMonths
+        };
+    }
+
+    function formatCurrency(amount) {
+        return '$' + amount.toLocaleString('en-AU');
+    }
+
+    function runCalculation() {
+        var complexityEl = document.getElementById('complexity');
+        var usersEl = document.getElementById('users');
+        var slaEl = document.getElementById('sla');
+        var resultsEl = document.getElementById('results');
+        
+        if (!complexityEl || !usersEl || !slaEl || !resultsEl) {
+            console.log('Calculator: Elements not found');
+            return false;
+        }
+        
+        var complexity = complexityEl.value;
+        var userTier = usersEl.value;
+        var sla = slaEl.value;
+        var years = 3;
+        var months = years * 12;
+
+        // Calculate competitor options with user-tier scaling
+        var freelanceBuild = pricing.build[complexity].freelance;
+        var freelanceHosting = pricing.hosting[complexity].freelance * months * infraMult[userTier];
+        var freelanceMaintenance = pricing.maintenance[complexity].freelance * months * supportMult[userTier];
+        var freelanceEnhancements = pricing.enhancements[complexity].freelance;
+        var freelanceTotal = freelanceBuild + freelanceHosting + freelanceMaintenance + freelanceEnhancements;
+
+        var agencyBuild = pricing.build[complexity].agency;
+        var agencyHosting = pricing.hosting[complexity].agency * months * infraMult[userTier];
+        var agencyMaintenance = pricing.maintenance[complexity].agency * months * supportMult[userTier];
+        var agencyEnhancements = pricing.enhancements[complexity].agency;
+        var agencyTotal = agencyBuild + agencyHosting + agencyMaintenance + agencyEnhancements;
+
+        var lowcodeBuild = pricing.build[complexity].lowcode;
+        var lowcodeBasePlatform = pricing.hosting[complexity].lowcode * months;
+        var lowcodeUserPlatform = lowcodeUserFees[userTier] * avgUsers[userTier] * months;
+        var lowcodeHosting = lowcodeBasePlatform + lowcodeUserPlatform;
+        var lowcodeMaintenance = pricing.maintenance[complexity].lowcode * months;
+        var lowcodeEnhancements = pricing.enhancements[complexity].lowcode;
+        var lowcodeTotal = lowcodeBuild + lowcodeHosting + lowcodeMaintenance + lowcodeEnhancements;
+
+        // Calculate HSTLES using Rate Card A formula
+        var hstles = calculateHSTLES(complexity, userTier, sla, months);
+        var hstlesEnhancements = pricing.enhancements[complexity].hstles;
+        var hstlesTotal = hstles.engagementFee + hstles.leaseTotal + hstlesEnhancements;
+
+        // Update DOM
+        document.getElementById('freelance-build').textContent = formatCurrency(freelanceBuild);
+        document.getElementById('freelance-hosting').textContent = formatCurrency(freelanceHosting);
+        document.getElementById('freelance-maintenance').textContent = formatCurrency(freelanceMaintenance);
+        document.getElementById('freelance-enhancements').textContent = formatCurrency(freelanceEnhancements);
+        document.getElementById('freelance-total').textContent = formatCurrency(freelanceTotal);
+
+        document.getElementById('agency-build').textContent = formatCurrency(agencyBuild);
+        document.getElementById('agency-hosting').textContent = formatCurrency(agencyHosting);
+        document.getElementById('agency-maintenance').textContent = formatCurrency(agencyMaintenance);
+        document.getElementById('agency-enhancements').textContent = formatCurrency(agencyEnhancements);
+        document.getElementById('agency-total').textContent = formatCurrency(agencyTotal);
+
+        document.getElementById('lowcode-build').textContent = formatCurrency(lowcodeBuild);
+        document.getElementById('lowcode-hosting').textContent = formatCurrency(lowcodeHosting);
+        document.getElementById('lowcode-maintenance').textContent = formatCurrency(lowcodeMaintenance);
+        document.getElementById('lowcode-enhancements').textContent = formatCurrency(lowcodeEnhancements);
+        document.getElementById('lowcode-total').textContent = formatCurrency(lowcodeTotal);
+
+        document.getElementById('hstles-build').textContent = formatCurrency(Math.round(hstles.engagementFee));
+        document.getElementById('hstles-hosting').textContent = formatCurrency(Math.round(hstles.leaseTotal));
+        document.getElementById('hstles-enhancements').textContent = formatCurrency(hstlesEnhancements);
+        document.getElementById('hstles-total').textContent = formatCurrency(Math.round(hstlesTotal));
+
+        // Update engagement fee credit visual
+        document.getElementById('hstles-free-months').textContent = hstles.engagementMonths;
+
+        // Savings
+        var saveFreelance = freelanceTotal - hstlesTotal;
+        var saveAgency = agencyTotal - hstlesTotal;
+        var saveLowcode = lowcodeTotal - hstlesTotal;
+
+        // Freelance savings display
+        var saveFreelanceEl = document.getElementById('save-freelance');
+        var freelanceWarningEl = document.getElementById('freelance-warning');
+        
+        if (saveFreelance < 0) {
+            saveFreelanceEl.textContent = formatCurrency(Math.abs(saveFreelance));
+            document.getElementById('save-freelance-pct').textContent = '(Freelance appears cheaper)';
+            saveFreelanceEl.style.color = '#e6a23c';
+            
+            if (freelanceWarningEl) {
+                var warnings = [];
+                warnings.push('No SLA or uptime guarantees - if they disappear, so does your support');
+                if (complexity !== 'low') {
+                    warnings.push('Single point of failure - one developer knows all the code');
+                }
+                if (userTier !== 'U1') {
+                    warnings.push('Infrastructure costs often underestimated - you manage servers, security, backups');
+                }
+                if (complexity === 'high') {
+                    warnings.push('Complex projects often exceed initial estimates by 50-200%');
+                }
+                warnings.push('Finding a replacement developer can take months and cost more than the original build');
+                
+                freelanceWarningEl.innerHTML = '<i class="fas fa-exclamation-triangle"></i> <strong>Freelance risks to consider:</strong><ul>' + 
+                    warnings.map(function(w) { return '<li>' + w + '</li>'; }).join('') + '</ul>';
+                freelanceWarningEl.style.display = 'block';
+            }
+        } else {
+            saveFreelanceEl.textContent = formatCurrency(saveFreelance);
+            document.getElementById('save-freelance-pct').textContent = '(' + Math.round((saveFreelance / freelanceTotal) * 100) + '% less)';
+            saveFreelanceEl.style.color = '#3486F1';
+            if (freelanceWarningEl) freelanceWarningEl.style.display = 'none';
+        }
+        
+        // Agency savings display
+        var saveAgencyEl = document.getElementById('save-agency');
+        var agencyWarningEl = document.getElementById('agency-warning');
+        
+        if (saveAgency < 0) {
+            saveAgencyEl.textContent = formatCurrency(Math.abs(saveAgency));
+            document.getElementById('save-agency-pct').textContent = '(Agency appears cheaper)';
+            saveAgencyEl.style.color = '#e6a23c';
+            
+            if (agencyWarningEl) {
+                var warnings = [];
+                warnings.push('Quoted prices often exclude ongoing support contracts and change requests');
+                if (complexity !== 'low') {
+                    warnings.push('Scope creep is common - expect 30-50% cost overruns on medium/complex projects');
+                }
+                if (userTier !== 'U1') {
+                    warnings.push('Infrastructure and hosting often billed separately at premium rates');
+                }
+                warnings.push('You\'ll likely need a retainer ($2-5k/month) for ongoing support and updates');
+                warnings.push('Agencies may deprioritise your project for larger clients');
+                
+                agencyWarningEl.innerHTML = '<i class="fas fa-exclamation-triangle"></i> <strong>Agency risks to consider:</strong><ul>' + 
+                    warnings.map(function(w) { return '<li>' + w + '</li>'; }).join('') + '</ul>';
+                agencyWarningEl.style.display = 'block';
+            }
+        } else {
+            saveAgencyEl.textContent = formatCurrency(saveAgency);
+            document.getElementById('save-agency-pct').textContent = '(' + Math.round((saveAgency / agencyTotal) * 100) + '% less)';
+            saveAgencyEl.style.color = '#3486F1';
+            if (agencyWarningEl) agencyWarningEl.style.display = 'none';
+        }
+        
+        // Low-code savings display
+        var saveLowcodeEl = document.getElementById('save-lowcode');
+        var lowcodeWarningEl = document.getElementById('lowcode-warning');
+        
+        if (saveLowcode < 0) {
+            saveLowcodeEl.textContent = formatCurrency(Math.abs(saveLowcode));
+            document.getElementById('save-lowcode-pct').textContent = '(Low-code appears cheaper)';
+            saveLowcodeEl.style.color = '#e6a23c';
+            
+            if (lowcodeWarningEl) {
+                var warnings = [];
+                if (complexity === 'high') {
+                    warnings.push('Complex requirements often hit platform limitations, requiring expensive workarounds or rebuilds');
+                }
+                if (complexity === 'medium') {
+                    warnings.push('Multi-step workflows may require premium plugins or custom code, increasing costs');
+                }
+                if (userTier === 'U3' || userTier === 'U4') {
+                    warnings.push('Per-user pricing compounds quickly at scale - quoted prices often exclude user fees');
+                }
+                if (userTier === 'U2' && complexity !== 'low') {
+                    warnings.push('Growing teams often outgrow low-code platforms, requiring costly migrations');
+                }
+                warnings.push('Vendor lock-in: your data and logic are tied to their platform');
+                
+                lowcodeWarningEl.innerHTML = '<i class="fas fa-exclamation-triangle"></i> <strong>Low-code risks to consider:</strong><ul>' + 
+                    warnings.map(function(w) { return '<li>' + w + '</li>'; }).join('') + '</ul>';
+                lowcodeWarningEl.style.display = 'block';
+            }
+        } else {
+            saveLowcodeEl.textContent = formatCurrency(saveLowcode);
+            document.getElementById('save-lowcode-pct').textContent = '(' + Math.round((saveLowcode / lowcodeTotal) * 100) + '% less)';
+            saveLowcodeEl.style.color = '#3486F1';
+            if (lowcodeWarningEl) lowcodeWarningEl.style.display = 'none';
+        }
+
+        // Update results params display
+        var complexityLabels = { low: 'Low Complexity', medium: 'Medium Complexity', high: 'High Complexity' };
+        var userLabels = { U1: '1-25 users', U2: '26-100 users', U3: '101-500 users', U4: '500+ users' };
+        var slaLabels = { standard: 'Standard Support', enhanced: 'Enhanced Support', premium: 'Premium Support' };
+        var paramsEl = document.getElementById('results-params');
+        if (paramsEl) {
+            paramsEl.textContent = complexityLabels[complexity] + ' • ' + userLabels[userTier] + ' • ' + slaLabels[sla] + ' • 3-Year Projection';
+        }
+
+        // Hide inputs, show results
+        var inputsEl = document.getElementById('calculator-inputs');
+        if (inputsEl) {
+            inputsEl.classList.add('hidden');
+        }
+        resultsEl.classList.add('visible');
+        
+        console.log('Calculator: Results displayed');
+        return true;
+    }
+
+    function showInputs() {
+        var inputsEl = document.getElementById('calculator-inputs');
+        var resultsEl = document.getElementById('results');
+        
+        if (inputsEl) {
+            inputsEl.classList.remove('hidden');
+        }
+        if (resultsEl) {
+            resultsEl.classList.remove('visible');
+        }
+    }
+
+    // Use event delegation for all button clicks
+    document.addEventListener('click', function(e) {
+        // Calculate button
+        var calcBtn = e.target.closest('#calculate-btn');
+        if (calcBtn) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Calculator: Calculate clicked');
+            runCalculation();
+            return;
+        }
+        
+        // Recalculate button
+        var recalcBtn = e.target.closest('#recalculate-btn');
+        if (recalcBtn) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Calculator: Recalculate clicked');
+            showInputs();
+            return;
+        }
+    });
+
+    console.log('Calculator: Event listeners attached');
+})();
+</script>
+
+<!-- /CONTENT -->

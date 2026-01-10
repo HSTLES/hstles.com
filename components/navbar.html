@@ -1,0 +1,49 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="--bs-navbar-color: #fff; --bs-navbar-hover-color: #43CCBD; --bs-navbar-brand-color: #fff; --bs-navbar-brand-hover-color: #43CCBD;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">
+            <i class="fas fa-cube me-2"></i>HSTLES
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/branded-saas" hx-get="/pages/saas-branded.html" hx-target="#page-content" hx-push-url="/branded-saas" hx-swap="innerHTML">Our Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/custom-saas" hx-get="/pages/saas-custom.html" hx-target="#page-content" hx-push-url="/custom-saas" hx-swap="innerHTML">Custom Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/it-services" hx-get="/pages/it-services.html" hx-target="#page-content" hx-push-url="/it-services" hx-swap="innerHTML">IT Services</a>
+                </li>
+                <li class="nav-item dropdown hidden">
+                    <a class="nav-link dropdown-toggle" href="#" id="legalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-labelledby="legalDropdown">
+                        Legal & Support
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="legalDropdown">
+                        <li><a class="dropdown-item" href="/privacy" hx-get="/pages/privacy.html" hx-target="#page-content" hx-push-url="/privacy" hx-swap="innerHTML">Privacy Policy</a></li>
+                        <li><a class="dropdown-item" href="/privacy-branded" hx-get="/pages/privacy-branded.html" hx-target="#page-content" hx-push-url="/privacy-branded" hx-swap="innerHTML">Privacy - Products</a></li>
+                        <li><a class="dropdown-item" href="/privacy-custom" hx-get="/pages/privacy-custom.html" hx-target="#page-content" hx-push-url="/privacy-custom" hx-swap="innerHTML">Privacy - Custom</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/sla-branded" hx-get="/pages/sla-branded.html" hx-target="#page-content" hx-push-url="/sla-branded" hx-swap="innerHTML">Service Expectations</a></li>
+                        <li><a class="dropdown-item" href="/sla-custom" hx-get="/pages/sla-custom.html" hx-target="#page-content" hx-push-url="/sla-custom" hx-swap="innerHTML">Custom Solutions SLA</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://status.hstles.com" target="_blank">
+                            <i class="fas fa-chart-line"></i> Status Page
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-2" href="https://login.hstles.com" target="_blank">
+                        <i class="fas fa-sign-in-alt me-2"></i>Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
