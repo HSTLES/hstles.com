@@ -89,8 +89,9 @@
     <!-- Show 404 content after 8 seconds -->
     <script>
         setTimeout(function() {
-            var content = document.querySelector('.delayed-content');
-            if (content) content.classList.add('visible');
+            document.querySelectorAll('.delayed-content').forEach(function(el) {
+                el.classList.add('visible');
+            });
         }, 8000);
     </script>
 </body>
