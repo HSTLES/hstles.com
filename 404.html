@@ -19,16 +19,7 @@
     <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
     
-    <style>
-        /* Hide 404 content initially, show after delay */
-        .delayed-content {
-            opacity: 0;
-            transition: opacity 0.5s ease-in;
-        }
-        .delayed-content.visible {
-            opacity: 1;
-        }
-    </style>
+    
     
     <!-- HTMX -->
     <script src="https://unpkg.com/htmx.org@2.0.4"></script>
@@ -52,7 +43,7 @@
     <!-- Page Content - 404 specific -->
     <main id="page-content">
         <header id="header">
-            <div class="content delayed-content" style="opacity: 0;">
+            <div class="content hidden">
                 <h1><a href="#">HSTLES</a></h1>
                 <p>host-less</p>
                 <p>404<br>
@@ -63,7 +54,7 @@
                     <li><a href="/" class="button icon solid fa-home">home</a></li>
                 </ul>
             </div>
-            <div class="hover content delayed-content" style="opacity: 0;"><img src="/assets/css/images/hstles/box.svg" class="illustration" alt="HSTLES cloud platform illustration"></div>
+            <div class="hover content hidden"><img src="/assets/css/images/hstles/box.svg" class="illustration" alt="HSTLES cloud platform illustration"></div>
         </header>
     </main>
 
@@ -89,8 +80,8 @@
     <!-- Show 404 content after 8 seconds -->
     <script>
         setTimeout(function() {
-            document.querySelectorAll('.delayed-content').forEach(function(el) {
-                el.classList.add('visible');
+            document.querySelectorAll('#header > div.hidden').forEach(function(el) {
+                el.classList.remove('hidden');
             });
         }, 8000);
     </script>
