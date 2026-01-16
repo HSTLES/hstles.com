@@ -3,6 +3,7 @@ window.siteConfig = {
     // Router Configuration
     routes: {
         '/': '/pages/home.html',
+        '/small-business': '/pages/small-business.html',
         '/branded-saas': '/pages/saas-branded.html',
         '/custom-saas': '/pages/saas-custom.html',
         '/it-services': '/pages/it-services.html',
