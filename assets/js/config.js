@@ -4,6 +4,8 @@ window.siteConfig = {
     routes: {
         '/': '/pages/home.html',
         '/partnering': '/pages/partnering.html',
+        '/platform': '/pages/platform.html',
+        '/success-stories': '/pages/success-stories.html',
         '/small-business': '/pages/small-business.html',
         '/branded-saas': '/pages/saas-branded.html',
         '/custom-saas': '/pages/saas-custom.html',

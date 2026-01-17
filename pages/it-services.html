@@ -62,14 +62,14 @@
 <!-- Header -->
 <header id="header">
     <div class="content">
-        <h1><a href="">HSTLES</a></h1>
+        <h1><a href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">HSTLES</a></h1>
         <p>Managed IT Services</p>
         <p>Device management, monitoring,<br>
             and support for your clients.
         </p>
         <ul class="actions">
             <li><a href="#managed-service" class="button primary icon solid fa-shield-alt">Managed Service Plans</a></li>
-            <li><a href="small-business" class="button icon solid fa-store">Small Business</a></li>
+            <li><a href="/small-business" hx-get="/pages/small-business.html" hx-target="#page-content" hx-push-url="/small-business" hx-swap="innerHTML" class="button icon solid fa-store">Small Business</a></li>
         </ul>
     </div>
     <div class="hover content"><img src="/assets/css/images/hstles/box.svg" class="illustration"></div>
@@ -418,12 +418,12 @@
     </header>
     <ul class="icons labeled">
         <li>
-            <a href="small-business" style="text-decoration: none; color: inherit;">
+            <a href="/small-business" hx-get="/pages/small-business.html" hx-target="#page-content" hx-push-url="/small-business" hx-swap="innerHTML" style="text-decoration: none; color: inherit;">
                 <span class="icon solid fa-store"><span class="labels">Small Business</span></span>
             </a>
         </li>
         <li>
-            <a href="ndis" style="text-decoration: none; color: inherit;">
+            <a href="/ndis" hx-get="/pages/ndis.html" hx-target="#page-content" hx-push-url="/ndis" hx-swap="innerHTML" style="text-decoration: none; color: inherit;">
                 <span class="icon solid fa-wheelchair"><span class="labels">NDIS Providers</span></span>
             </a>
         </li>
@@ -484,7 +484,7 @@
     </header>
     <ul class="actions special">
         <li><a href="https://support.hstles.com/it" class="button primary icon solid fa-comments">Book a Discovery Call</a></li>
-        <li><a href="security" class="button icon solid fa-shield-alt">Security Overview</a></li>
+        <li><a href="/security" hx-get="/pages/security.html" hx-target="#page-content" hx-push-url="/security" hx-swap="innerHTML" class="button icon solid fa-shield-alt">Security Overview</a></li>
     </ul>
 </section>
 <!-- /CONTENT -->

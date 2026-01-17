@@ -40,7 +40,7 @@
 <!-- Header -->
 <header id="header">
     <div class="content">
-        <h1><a href="">HSTLES</a></h1>
+        <h1><a href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">HSTLES</a></h1>
         <p>Partner Program</p>
         <p>Resell HSTLES products to your clients<br>
             with partner pricing.
@@ -191,8 +191,8 @@
         </div>
     </div>
 
-    <div class="spotlight">
-        <div class="content hidden">
+    <div class="spotlight hidden">
+        <div class="content">
             <header>
                 <h3><span class="icon solid fa-file-lines"></span> Sales resources</h3>
             </header>
@@ -209,7 +209,7 @@
     </header>
     <ul class="actions special">
         <li><a href="https://support.hstles.com/partner" class="button primary icon solid fa-handshake">Apply to Partner</a></li>
-        <li><a href="it-services" class="button icon solid fa-server">View Managed Services</a></li>
+        <li><a href="/it-services" hx-get="/pages/it-services.html" hx-target="#page-content" hx-push-url="/it-services" hx-swap="innerHTML" class="button icon solid fa-server">View Managed Services</a></li>
     </ul>
 </section>
 <!-- /CONTENT -->

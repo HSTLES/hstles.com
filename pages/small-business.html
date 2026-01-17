@@ -51,7 +51,7 @@
 <!-- Header -->
 <header id="header">
     <div class="content">
-        <h1><a href="">HSTLES</a></h1>
+        <h1><a href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">HSTLES</a></h1>
         <p>Small Business IT Support</p>
         <p>Fixed pricing. Unlimited support.<br>
             No hourly bills. No surprises.
@@ -479,7 +479,7 @@
     </header>
     <ul class="icons labeled">
         <li>
-            <a href="ndis" style="text-decoration: none; color: inherit;">
+            <a href="/ndis" hx-get="/pages/ndis.html" hx-target="#page-content" hx-push-url="/ndis" hx-swap="innerHTML" style="text-decoration: none; color: inherit;">
                 <span class="icon solid fa-wheelchair"><span class="labels">NDIS Providers</span></span>
             </a>
         </li>
@@ -568,7 +568,7 @@
     <p style="margin-top: 2em; color: #666;">
         <i class="icon solid fa-map-marker-alt"></i> Australian-based support
         &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="security" style="color: inherit;"><i class="icon solid fa-shield-alt"></i> Security Overview</a>
+        <a href="/security" hx-get="/pages/security.html" hx-target="#page-content" hx-push-url="/security" hx-swap="innerHTML" style="color: inherit;"><i class="icon solid fa-shield-alt"></i> Security Overview</a>
     </p>
 </section>
 <!-- /CONTENT -->
