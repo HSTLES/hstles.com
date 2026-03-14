@@ -1,0 +1,55 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">
+            <i class="fas fa-cube me-2"></i>HSTLES
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/platform" hx-get="/pages/platform.html" hx-target="#page-content" hx-push-url="/platform" hx-swap="innerHTML">Platform</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                        <li><a class="dropdown-item" href="/branded-saas" hx-get="/pages/saas-branded.html" hx-target="#page-content" hx-push-url="/branded-saas" hx-swap="innerHTML"><i class="fas fa-cube"></i> Branded SaaS</a></li>
+                        <li><a class="dropdown-item" href="/custom-saas" hx-get="/pages/saas-custom.html" hx-target="#page-content" hx-push-url="/custom-saas" hx-swap="innerHTML"><i class="fas fa-code"></i> Custom Solutions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/it-services" hx-get="/pages/it-services.html" hx-target="#page-content" hx-push-url="/it-services" hx-swap="innerHTML"><i class="fas fa-headset"></i> IT Services</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="legalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Legal
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="legalDropdown">
+                        <li><a class="dropdown-item" href="/privacy" hx-get="/pages/privacy.html" hx-target="#page-content" hx-push-url="/privacy" hx-swap="innerHTML"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a class="dropdown-item" href="/privacy-branded" hx-get="/pages/privacy-branded.html" hx-target="#page-content" hx-push-url="/privacy-branded" hx-swap="innerHTML"><i class="fas fa-file-alt"></i> Privacy — Products</a></li>
+                        <li><a class="dropdown-item" href="/privacy-custom" hx-get="/pages/privacy-custom.html" hx-target="#page-content" hx-push-url="/privacy-custom" hx-swap="innerHTML"><i class="fas fa-file-alt"></i> Privacy — Custom</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/sla-branded" hx-get="/pages/sla-branded.html" hx-target="#page-content" hx-push-url="/sla-branded" hx-swap="innerHTML"><i class="fas fa-handshake"></i> Service Expectations</a></li>
+                        <li><a class="dropdown-item" href="/sla-custom" hx-get="/pages/sla-custom.html" hx-target="#page-content" hx-push-url="/sla-custom" hx-swap="innerHTML"><i class="fas fa-file-contract"></i> Custom SLA</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://status.hstles.com" target="_blank">
+                        <i class="fas fa-chart-line me-1"></i>Status
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-2" href="https://login.hstles.com" target="_blank">
+                        <i class="fas fa-sign-in-alt me-1"></i>Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

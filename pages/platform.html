@@ -1,0 +1,297 @@
+<!-- HEAD_META -->
+<title>HSTLES - Platform | Distributed Mesh Architecture for Modern Applications</title>
+<meta name="description" content="Built on a hybrid distributed mesh architecture. Australian data sovereignty, zero-trust security, and 50-70% faster than traditional cloud architectures." />
+<meta name="keywords" content="distributed mesh, zero trust, Australian cloud, edge computing, service mesh, high performance platform" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hstles.com/platform" />
+<meta property="og:title" content="HSTLES Platform - The Infrastructure Behind Everything We Build" />
+<meta property="og:description" content="Hybrid distributed mesh architecture with zero-trust security and Australian data sovereignty." />
+<meta property="og:image" content="https://hstles.com/assets/images/og-platform.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://hstles.com/platform" />
+<meta property="twitter:title" content="HSTLES Platform - Distributed Mesh Architecture" />
+<meta property="twitter:description" content="Zero-trust security, Australian data sovereignty, high performance." />
+<meta property="twitter:image" content="https://hstles.com/assets/images/og-platform.png" />
+<!-- /HEAD_META -->
+
+<!-- STRUCTURED_DATA -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "HSTLES Platform",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Cloud",
+    "description": "Hybrid distributed mesh platform with embedded service mesh, zero-trust security, and dual-mode operation",
+    "provider": {
+        "@type": "Organization",
+        "name": "HSTLES",
+        "url": "https://hstles.com"
+    }
+}
+</script>
+<!-- /STRUCTURED_DATA -->
+
+<!-- CONTENT -->
+<!-- Header -->
+<header id="header">
+    <div class="content">
+        <h1><a href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">HSTLES</a></h1>
+        <p>The Platform</p>
+        <p>A distributed mesh architecture<br>
+            built for performance, security, and resilience.
+        </p>
+        <ul class="actions">
+            <li><a href="#architecture" class="button primary icon solid fa-chevron-down scrolly">How It Works</a></li>
+            <li><a href="/branded-saas" hx-get="/pages/saas-branded.html" hx-target="#page-content" hx-push-url="/branded-saas" hx-swap="innerHTML" class="button icon solid fa-box">Our Products</a></li>
+        </ul>
+    </div>
+    <div class="hover content"><img src="/assets/css/images/hstles/box.svg" class="illustration"></div>
+</header>
+
+<!-- Overview -->
+<section id="overview" class="wrapper style2 special">
+    <header class="major">
+        <h2>Not just another cloud platform</h2>
+        <p>HSTLES is built on a <strong>Hybrid Distributed Mesh Architecture</strong>.<br>
+            The networking intelligence is embedded directly in the application — not bolted on as an afterthought.</p>
+    </header>
+    <ul class="icons major">
+        <li><span class="icon solid fa-network-wired"><span class="label"></span></span></li>
+        <li><span class="icon solid fa-shield-alt"><span class="label"></span></span></li>
+        <li><span class="icon solid fa-bolt"><span class="label"></span></span></li>
+    </ul>
+</section>
+
+<!-- Architecture -->
+<section id="architecture" class="wrapper">
+    <header class="major">
+        <h2>Architecture Overview</h2>
+        <p>Two layers working together. Smart separation of concerns.</p>
+    </header>
+
+    <div class="row mb-2em">
+        <div class="col-6 col-12-medium pt-1em">
+            <div class="feature-card primary">
+                <h3><i class="icon solid fa-globe text-primary"></i> The Edge (Gateways)</h3>
+                <p class="text-sm text-muted">Public-facing. High concurrency.</p>
+                <ul class="check-list">
+                    <li><i class="icon solid fa-check text-primary"></i>Handle thousands of simultaneous connections</li>
+                    <li><i class="icon solid fa-check text-primary"></i>Terminate TLS and validate requests</li>
+                    <li><i class="icon solid fa-check text-primary"></i>Translate HTTP to internal protocols</li>
+                    <li><i class="icon solid fa-check text-primary"></i><strong>No database credentials</strong> — can't leak what they don't have</li>
+                </ul>
+                <p class="mt-1em"><em>Optimised for memory and connection handling.</em></p>
+            </div>
+        </div>
+        <div class="col-6 col-12-medium pt-1em">
+            <div class="feature-card success">
+                <h3><i class="icon solid fa-server text-success"></i> The Core (Workers)</h3>
+                <p class="text-sm text-muted">Private network. Heavy lifting.</p>
+                <ul class="check-list">
+                    <li><i class="icon solid fa-check text-success"></i>Execute business logic and database queries</li>
+                    <li><i class="icon solid fa-check text-success"></i>Handle computationally expensive operations</li>
+                    <li><i class="icon solid fa-check text-success"></i>Manage secrets and credentials securely</li>
+                    <li><i class="icon solid fa-check text-success"></i><strong>Not publicly accessible</strong> — isolated by design</li>
+                </ul>
+                <p class="mt-1em"><em>Optimised for CPU and throughput.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-box text-center">
+        <p class="m-0"><i class="icon solid fa-exchange-alt text-primary icon-lg"></i></p>
+        <p class="mt-half"><strong>Custom Overlay Network (VL1)</strong><br>
+            <span class="text-muted">Gateways and Workers communicate via encrypted mesh protocol — not standard HTTP.</span></p>
+    </div>
+</section>
+
+<!-- Zero Trust Security -->
+<section id="security" class="wrapper style2">
+    <header class="major">
+        <h2><i class="icon solid fa-shield-alt"></i> Zero Trust Security</h2>
+        <p>Defence in depth. Privilege separation by design.</p>
+    </header>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3><span class="icon solid fa-lock"></span> Credential Isolation</h3>
+            </header>
+            <p>Public-facing gateways don't possess database passwords or signing secrets.
+                <br>If a gateway is compromised, the attacker cannot directly access backend systems.
+                <br><strong>The DMZ pattern — applied at the application level.</strong></p>
+        </div>
+    </div>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3><span class="icon solid fa-filter"></span> Protocol Break</h3>
+            </header>
+            <p>The transition from public HTTP to internal mesh protocol acts as a natural firewall.
+                <br>Malformed payloads and standard web exploits don't propagate to the backend.
+                <br><strong>Serialisation (HTTP → Protobuf) enforces strict schema validation.</strong></p>
+        </div>
+    </div>
+
+    <div class="spotlight">
+        <div class="content">
+            <header>
+                <h3><span class="icon solid fa-user-shield"></span> No Lateral Movement</h3>
+            </header>
+            <p>Each request is validated independently. Nodes don't trust each other implicitly.
+                <br>Even if one component is compromised, it can't freely access other services.
+                <br><strong>High resistance to data exfiltration from the edge.</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- Performance -->
+<section id="performance" class="wrapper">
+    <header class="major">
+        <h2><i class="icon solid fa-tachometer-alt"></i> Performance</h2>
+        <p>Faster than traditional architectures. Here's why.</p>
+    </header>
+
+    <div class="row">
+        <div class="col-4 col-12-medium">
+            <div class="stat-card">
+                <p class="stat-number primary">20-50ms</p>
+                <p class="stat-label"><strong>Read Operations</strong></p>
+                <p class="stat-desc">Highly responsive for standard queries</p>
+            </div>
+        </div>
+        <div class="col-4 col-12-medium">
+            <div class="stat-card">
+                <p class="stat-number success">50-70%</p>
+                <p class="stat-label"><strong>Faster Than Traditional</strong></p>
+                <p class="stat-desc">Compared to standard cloud architectures</p>
+            </div>
+        </div>
+        <div class="col-4 col-12-medium">
+            <div class="stat-card">
+                <p class="stat-number purple">C10K</p>
+                <p class="stat-label"><strong>Connection Handling</strong></p>
+                <p class="stat-desc">Gateways handle thousands of concurrent users</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-box mt-2em text-center">
+        <h4 class="mt-0">The Trade-off (And Why It's Worth It)</h4>
+        <p>The mesh architecture introduces ~2-5ms overhead per request. This "mesh tax" buys:</p>
+        <div class="inline-block-left">
+            <p class="my-half"><i class="icon solid fa-check text-success"></i> <strong>Scalability</strong> — Gateways and Workers scale independently</p>
+            <p class="my-half"><i class="icon solid fa-check text-success"></i> <strong>Security</strong> — Privilege separation and protocol isolation</p>
+            <p class="my-half"><i class="icon solid fa-check text-success"></i> <strong>Resilience</strong> — Failed components don't cascade</p>
+        </div>
+        <p class="mb-0"><strong>User perception:</strong> Negligible. Feels instant for standard web interactions.</p>
+    </div>
+</section>
+
+<!-- Dual Mode -->
+<section id="dual-mode" class="wrapper style2">
+    <header class="major">
+        <h2><i class="icon solid fa-sync-alt"></i> Dual-Mode Operation</h2>
+        <p>Distributed by default. Monolith when needed.</p>
+    </header>
+
+    <div class="row">
+        <div class="col-6 col-12-medium pt-1em">
+            <div class="feature-card outline-primary">
+                <h3 class="text-primary"><i class="icon solid fa-network-wired"></i> Mesh Mode (Standard)</h3>
+                <p>Services distributed across multiple nodes. Gateways communicate with Workers via the overlay network.</p>
+                <ul class="check-list">
+                    <li><i class="icon solid fa-check text-primary"></i>Horizontal scaling</li>
+                    <li><i class="icon solid fa-check text-primary"></i>Geographic distribution</li>
+                    <li><i class="icon solid fa-check text-primary"></i>Independent component updates</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6 col-12-medium pt-1em">
+            <div class="feature-card outline-danger">
+                <h3 class="text-danger"><i class="icon solid fa-cube"></i> Direct Mode (Failover)</h3>
+                <p>"Logical monolith" mode. Transport layer bypassed. Gateways execute backend logic via direct function calls.</p>
+                <ul class="check-list">
+                    <li><i class="icon solid fa-check text-danger"></i>Zero network dependency</li>
+                    <li><i class="icon solid fa-check text-danger"></i>Emergency continuity</li>
+                    <li><i class="icon solid fa-check text-danger"></i>"Break glass" disaster recovery</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-muted text-center mt-2em">
+        <i class="icon solid fa-info-circle"></i> Same business logic runs in both modes. No code changes required for failover.
+    </p>
+</section>
+
+<!-- Data Sovereignty -->
+<section id="sovereignty" class="wrapper">
+    <header class="major">
+        <h2><i class="icon solid fa-map-marker-alt"></i> Australian Data Sovereignty</h2>
+        <p>Your data stays in Australia. No exceptions.</p>
+    </header>
+
+    <div class="content-narrow">
+        <ul class="alt">
+            <li><strong>Primary Region:</strong> Sydney (Australian data centres)</li>
+            <li><strong>Backups:</strong> Encrypted, stored within Australian jurisdiction</li>
+            <li><strong>Compliance:</strong> Aligned with Australian Privacy Principles (APPs) under the Privacy Act 1988</li>
+            <li><strong>No offshore processing:</strong> Data never leaves Australian borders unless explicitly requested</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Data Flow -->
+<section id="data-flow" class="wrapper style2">
+    <header class="major">
+        <h2><i class="icon solid fa-route"></i> How a Request Flows</h2>
+        <p>From user click to database and back.</p>
+    </header>
+
+    <div class="flow-steps">
+        <div class="flow-step">
+            <span class="step-number">1</span>
+            <div><strong>Ingress</strong> — User request hits Gateway (HTTPS)</div>
+        </div>
+        <div class="flow-step">
+            <span class="step-number">2</span>
+            <div><strong>Translation</strong> — Gateway validates and converts to Protobuf</div>
+        </div>
+        <div class="flow-step">
+            <span class="step-number">3</span>
+            <div><strong>Discovery</strong> — Gateway queries directory to find healthy Worker</div>
+        </div>
+        <div class="flow-step">
+            <span class="step-number">4</span>
+            <div><strong>Transport</strong> — Secure VL1 session established with Worker</div>
+        </div>
+        <div class="flow-step">
+            <span class="step-number">5</span>
+            <div><strong>Execution</strong> — Worker executes logic, queries database</div>
+        </div>
+        <div class="flow-step">
+            <span class="step-number">6</span>
+            <div><strong>Response</strong> — Result flows back: Worker → Mesh → Gateway → User</div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="wrapper style2 special">
+    <header class="major">
+        <h2>Built for performance. Designed for trust.</h2>
+        <p>Every product we build runs on this platform.</p>
+    </header>
+    <ul class="actions special">
+        <li><a href="/branded-saas" hx-get="/pages/saas-branded.html" hx-target="#page-content" hx-push-url="/branded-saas" hx-swap="innerHTML" class="button primary icon solid fa-box">Our Products</a></li>
+        <li><a href="/custom-saas" hx-get="/pages/saas-custom.html" hx-target="#page-content" hx-push-url="/custom-saas" hx-swap="innerHTML" class="button icon solid fa-code">Custom Solutions</a></li>
+    </ul>
+</section>
+<!-- /CONTENT -->
