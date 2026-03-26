@@ -40,211 +40,203 @@
 <!-- /STRUCTURED_DATA -->
 
 <!-- CONTENT -->
-<!-- Header -->
-<header id="header">
-    <div class="content">
-        <h1><a href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">HSTLES</a></h1>
-        <p>Security & Privacy</p>
-        <p>Your data, protected.<br>
-            Australian sovereignty. Enterprise security.
-        </p>
-        <ul class="actions">
-            <li><a href="#data-sovereignty" class="button primary icon solid fa-shield-alt scrolly">Learn More</a></li>
-            <li><a href="/custom-saas" hx-get="/pages/saas-custom.html" hx-target="#page-content" hx-push-url="/custom-saas" hx-swap="innerHTML" class="button icon solid fa-arrow-left">Back to Custom Solutions</a></li>
-        </ul>
-    </div>
-    <div class="hover content"><img src="/assets/css/images/hstles/box.svg" class="illustration"></div>
-</header>
-
-<!-- Overview -->
-<section id="overview" class="wrapper style2 special">
-    <header class="major">
-        <h2>Security is not a feature. It's the foundation.</h2>
-        <p>We treat your data with the same care as a bank would.<br>
-            Enterprise-grade protection without enterprise complexity.</p>
-    </header>
-    <ul class="icons major">
-        <li><span class="icon solid fa-lock"><span class="label">Encryption</span></span></li>
-        <li><span class="icon solid fa-map-marker-alt"><span class="label">Sovereignty</span></span></li>
-        <li><span class="icon solid fa-user-shield"><span class="label">Privacy</span></span></li>
-    </ul>
+<!-- Hero -->
+<section class="hero" style="padding-bottom:var(--space-16);">
+  <div class="container">
+    <div class="section-label">Security</div>
+    <h1>Security is not a feature.<br>It's the <span class="accent">foundation</span></h1>
+    <p class="hero-sub">We treat your data with the same care as a bank would. Enterprise-grade protection without enterprise complexity. Australian data sovereignty, zero-trust architecture, and Privacy Act compliance.</p>
+  </div>
 </section>
 
-<!-- Data Sovereignty -->
-<section id="data-sovereignty" class="wrapper">
-    <header class="major">
-        <h2><i class="icon solid fa-map-marker-alt"></i> Data Sovereignty</h2>
-        <h3>Australian Data Stays in Australia</h3>
-    </header>
-    <div class="content-narrow">
-        <p>For our Australian clients, we guarantee that your primary data storage and processing occur within Australian borders.</p>
-        <ul class="alt">
-            <li><strong>Primary Region:</strong> Sydney (AWS Sydney / Fly.io Sydney)</li>
-            <li><strong>Backups:</strong> Stored in encrypted storage buckets in the Sydney region</li>
-            <li><strong>Compliance:</strong> Aligned with the Australian Privacy Principles (APPs) under the Privacy Act 1988</li>
-        </ul>
-        <p>Your data never leaves Australian jurisdiction unless you explicitly request it.</p>
+<!-- Core Security Features -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Protection</div>
+      <h2>Multi-layered security at every level</h2>
     </div>
-</section>
 
-<!-- Infrastructure Security -->
-<section id="infrastructure" class="wrapper style2">
-    <header class="major">
-        <h2><i class="icon solid fa-server"></i> Infrastructure Security</h2>
-        <h3>Modern, Isolated, Minimised Attack Surface</h3>
-    </header>
-    <div class="content-narrow">
-        <p>We utilise modern, ephemeral infrastructure to minimise attack surface and maximise security.</p>
-        
-        <h4>Platform Architecture</h4>
-        <ul class="alt">
-            <li><strong>Compute:</strong> Applications run on Fly.io, utilising Firecracker microVMs for strong isolation between tenants</li>
-            <li><strong>Database:</strong> Turso (libSQL) or managed PostgreSQL, encrypted at rest</li>
-            <li><strong>Network:</strong> Private networking with no direct database exposure to the internet</li>
-        </ul>
-        
-        <h4>Encryption Standards</h4>
-        <ul class="alt">
-            <li><strong>In Transit:</strong> All data encrypted via TLS 1.2/1.3</li>
-            <li><strong>At Rest:</strong> Industry-standard AES-256 encryption</li>
-            <li><strong>Secrets:</strong> All credentials and API keys stored in secure vaults, never in code</li>
-        </ul>
-    </div>
-</section>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Data Sovereignty</h3>
+        <p>Primary storage and processing in Sydney-based Australian data centres. Backups encrypted within Australian jurisdiction. Data never leaves Australian borders unless explicitly requested.</p>
+      </div>
 
-<!-- Application Security -->
-<section id="application" class="wrapper">
-    <header class="major">
-        <h2><i class="icon solid fa-shield-alt"></i> Application Security</h2>
-        <h3>Defense in Depth</h3>
-    </header>
-    <div class="content-narrow">
-        <h4>Authentication</h4>
-        <p>We use secure, token-based authentication (OIDC/OAuth2) or secure session management. No passwords stored in plain text, ever.</p>
-        
-        <h4>Access Control</h4>
-        <p>Role-Based Access Control (RBAC) ensures users only see data relevant to their role. Principle of least privilege applied throughout.</p>
-        
-        <h4>Vulnerability Management</h4>
-        <ul class="alt">
-            <li>Regular dependency scanning for known vulnerabilities</li>
-            <li>Automated security patching of the underlying platform</li>
-            <li>Secure development practices with code review</li>
-        </ul>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Encryption Standards</h3>
+        <p>TLS 1.2/1.3 for all data in transit. AES-256 encryption for data at rest. All credentials and API keys stored in secure vaults, never in code.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Infrastructure Security</h3>
+        <p>Firecracker microVMs for strong tenant isolation. Private networking with no direct database exposure. Ephemeral infrastructure to minimise attack surface.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Access Control</h3>
+        <p>OIDC/OAuth2 authentication. Role-Based Access Control (RBAC) at every level. Principle of least privilege applied throughout.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+        </div>
+        <h3>Mesh Encryption</h3>
+        <p>VL1 overlay with Noise Protocol encryption and mTLS for internal communications. Protocol break between HTTP and internal mesh acts as a natural firewall.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Vulnerability Management</h3>
+        <p>Regular dependency scanning for known vulnerabilities. Automated security patching of the underlying platform. Secure development practices with code review.</p>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Backup & DR -->
-<section id="backup" class="wrapper style2">
-    <header class="major">
-        <h2><i class="icon solid fa-database"></i> Backup & Disaster Recovery</h2>
-        <h3>Your Data, Protected Against the Unexpected</h3>
-    </header>
-    <div class="content-narrow">
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Standard</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Backup Frequency</strong></td>
-                        <td>Automated daily backups</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Retention Period</strong></td>
-                        <td>Rolling 30-day retention (configurable per client)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Restoration Testing</strong></td>
-                        <td>Regular tested restoration procedures</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Geographic Redundancy</strong></td>
-                        <td>Multiple availability zones within region</td>
-                    </tr>
-                </tbody>
-            </table>
+<section class="section">
+  <div class="container">
+    <div class="feature-row">
+      <div class="feature-row-text">
+        <div class="section-label">Resilience</div>
+        <h2>Backup &amp; Disaster Recovery</h2>
+        <p>Your data, protected against the unexpected. Automated daily backups with rolling 30-day retention (configurable per client). Regular tested restoration procedures and multiple availability zones within region.</p>
+        <ul class="feature-list">
+          <li><span class="check">&#10003;</span> Automated daily backups</li>
+          <li><span class="check">&#10003;</span> Rolling 30-day retention (configurable)</li>
+          <li><span class="check">&#10003;</span> Regular tested restoration procedures</li>
+          <li><span class="check">&#10003;</span> Multiple availability zones within region</li>
+          <li><span class="check">&#10003;</span> RTO/RPO defined per SLA tier</li>
+        </ul>
+      </div>
+      <div class="feature-row-visual">
+        <div class="info-box">
+          <h4>Backup Configuration</h4>
+          <ul class="feature-list">
+            <li><span class="check">&#10003;</span> Frequency: daily (automated)</li>
+            <li><span class="check">&#10003;</span> Retention: 30 days rolling</li>
+            <li><span class="check">&#10003;</span> Testing: regular restoration</li>
+            <li><span class="check">&#10003;</span> Region: Sydney multi-AZ</li>
+          </ul>
+          <h4 style="margin-top:1.25rem;">RPO/RTO per SLA Tier</h4>
+          <div class="highlight-strip">
+            <div class="highlight-item">
+              <div class="highlight-value">S1</div>
+              <div class="highlight-label">24hr / 24hr</div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-value">S2</div>
+              <div class="highlight-label">12hr / 12hr</div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-value">S3</div>
+              <div class="highlight-label">4hr / 8hr</div>
+            </div>
+          </div>
         </div>
-        <p>Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) defined per SLA tier.</p>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Shared Responsibility -->
-<section id="responsibility" class="wrapper">
-    <header class="major">
-        <h2><i class="icon solid fa-handshake"></i> Shared Responsibility</h2>
-        <h3>Security is a Partnership</h3>
-    </header>
-    <div class="row content-narrow">
-        <div class="col-6 col-12-medium">
-            <h4 class="text-center"><i class="icon solid fa-building"></i> HSTLES Responsibilities</h4>
-            <ul class="alt">
-                <li>Infrastructure security</li>
-                <li>Network protection</li>
-                <li>Application code security</li>
-                <li>Database encryption & backups</li>
-                <li>Platform updates & patching</li>
-                <li>Incident response</li>
-            </ul>
-        </div>
-        <div class="col-6 col-12-medium">
-            <h4 class="text-center"><i class="icon solid fa-users"></i> Client Responsibilities</h4>
-            <ul class="alt">
-                <li>User account management</li>
-                <li>Strong password enforcement</li>
-                <li>Appropriate access levels for staff</li>
-                <li>Reporting suspected security issues</li>
-                <li>Secure handling of credentials</li>
-                <li>Staff security awareness</li>
-            </ul>
-        </div>
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Partnership</div>
+      <h2>Shared responsibility</h2>
+      <p>Security is a partnership between HSTLES and our clients.</p>
     </div>
-</section>
 
-<!-- Privacy Act Compliance -->
-<section id="privacy" class="wrapper style2">
-    <header class="major">
-        <h2><i class="icon solid fa-gavel"></i> Privacy Act Compliance</h2>
-        <h3>Your Obligations, Supported</h3>
-    </header>
-    <div class="content-narrow">
-        <p>HSTLES acts as the <strong>data processor</strong>. We support your compliance obligations under the Privacy Act 1988.</p>
-        
-        <h4>Our Commitments</h4>
-        <ul class="alt">
-            <li><strong>No data selling:</strong> We do not sell or share your data with third parties</li>
-            <li><strong>Limited access:</strong> We only access your data for support and maintenance purposes</li>
-            <li><strong>Breach notification:</strong> Immediate notification in the event of a confirmed data breach (Notifiable Data Breaches scheme)</li>
-            <li><strong>Data portability:</strong> You can export your data at any time</li>
-            <li><strong>Data deletion:</strong> Upon request, we will delete your data in accordance with our data retention policy</li>
-        </ul>
-        
-        <h4>Australian Privacy Principles (APPs)</h4>
-        <p>Our practices are designed to help you comply with the 13 Australian Privacy Principles, including:</p>
-        <ul class="alt">
-            <li>APP 1 - Open and transparent management of personal information</li>
-            <li>APP 6 - Use or disclosure of personal information</li>
-            <li>APP 8 - Cross-border disclosure of personal information</li>
-            <li>APP 11 - Security of personal information</li>
-        </ul>
+    <div class="feature-grid feature-grid-2">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>HSTLES Responsibilities</h3>
+        <p>Infrastructure security, network protection, application code security, database encryption and backups, platform updates and patching, and incident response.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Client Responsibilities</h3>
+        <p>User account management, strong password enforcement, appropriate access levels for staff, reporting suspected security issues, secure handling of credentials, and staff security awareness.</p>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- Security Questions -->
-<section id="questions" class="wrapper special">
-    <header class="major">
-        <h2>Security Questions?</h2>
-        <p>For detailed technical questions, security audits, or compliance requirements,<br>
-            our team is ready to help.</p>
-    </header>
-    <ul class="actions special">
-        <li><a href="mailto:security@hstles.com" class="button primary icon solid fa-envelope">Contact Security Team</a></li>
-        <li><a href="/platform" hx-get="/pages/platform.html" hx-target="#page-content" hx-push-url="/platform" hx-swap="innerHTML" class="button icon solid fa-microchip">Platform Architecture</a></li>
-    </ul>
+<!-- Privacy Act -->
+<section class="section">
+  <div class="container">
+    <div class="feature-row reverse">
+      <div class="feature-row-text">
+        <div class="section-label">Compliance</div>
+        <h2>Privacy Act Compliance</h2>
+        <p>HSTLES acts as the data processor. We support your compliance obligations under the Privacy Act 1988.</p>
+        <ul class="feature-list">
+          <li><span class="check">&#10003;</span> No data selling — we do not sell or share your data with third parties</li>
+          <li><span class="check">&#10003;</span> Limited access — only for support and maintenance purposes</li>
+          <li><span class="check">&#10003;</span> Breach notification — immediate notification per Notifiable Data Breaches scheme</li>
+          <li><span class="check">&#10003;</span> Data portability — export your data at any time</li>
+          <li><span class="check">&#10003;</span> Data deletion — upon request per our retention policy</li>
+          <li><span class="check">&#10003;</span> APP 1 — Open and transparent management</li>
+          <li><span class="check">&#10003;</span> APP 6 — Use or disclosure of personal information</li>
+          <li><span class="check">&#10003;</span> APP 8 — Cross-border disclosure</li>
+          <li><span class="check">&#10003;</span> APP 11 — Security of personal information</li>
+        </ul>
+      </div>
+      <div class="feature-row-visual">
+        <div class="info-box">
+          <h4>Privacy Act 1988 Compliance</h4>
+          <ul class="feature-list">
+            <li><span class="check">&#10003;</span> Data Selling: never</li>
+            <li><span class="check">&#10003;</span> Data Access: support only</li>
+            <li><span class="check">&#10003;</span> Breach Notice: immediate</li>
+            <li><span class="check">&#10003;</span> Data Export: any time</li>
+            <li><span class="check">&#10003;</span> Data Location: Australia</li>
+          </ul>
+          <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <span class="chip">APP 1</span>
+            <span class="chip">APP 6</span>
+            <span class="chip">APP 8</span>
+            <span class="chip">APP 11</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- CTA -->
+<section class="section section-cta">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Security questions?</h2>
+      <p>For detailed technical questions, security audits, or compliance requirements, our team is ready to help.</p>
+      <div class="hero-actions">
+        <a href="mailto:security@hstles.com" class="btn btn-primary btn-lg">Contact Security Team</a>
+        <a href="/platform" hx-get="/pages/platform.html" hx-target="#page-content" hx-push-url="/platform" hx-swap="innerHTML" class="btn btn-secondary btn-lg">Platform Architecture</a>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- /CONTENT -->

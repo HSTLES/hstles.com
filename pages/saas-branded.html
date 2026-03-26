@@ -1,20 +1,20 @@
 <!-- HEAD_META -->
-<title>HSTLES - Our Products | Cloud Storage, Calendar Sync & More</title>
-<meta name="description" content="Production-grade SaaS applications: calndr.app calendar sync, wrkly.app workforce rostering, FRGHT logistics management, ORBTR device management, and CareLedger healthcare data system." />
-<meta name="keywords" content="cloud storage, calendar sync, workforce rostering, device management, healthcare data, zero-knowledge encryption, HSTLES" />
+<title>HSTLES - Our Products | Calendar Sync, Workforce Rostering, Device Management & More</title>
+<meta name="description" content="Production-grade SaaS applications: calndr.app calendar sync, wrkly.app workforce rostering, deposs.app payments, ORBTR device management, and CareLedger healthcare data system." />
+<meta name="keywords" content="calendar sync, workforce rostering, device management, healthcare data, payment processing, HSTLES" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://hstles.com/branded-saas.html" />
+<meta property="og:url" content="https://hstles.com/branded-saas" />
 <meta property="og:title" content="HSTLES Products - Enterprise Tools. Personal Simplicity." />
-<meta property="og:description" content="calndr.app, wrkly.app, fyles.app, ORBTR, and CareLedger - Production-grade SaaS applications built on our distributed mesh platform." />
+<meta property="og:description" content="calndr.app, wrkly.app, deposs.app, ORBTR, and CareLedger - Production-grade SaaS applications built on our distributed mesh platform." />
 <meta property="og:image" content="https://hstles.com/images/products-og.png" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://hstles.com/branded-saas.html" />
+<meta property="twitter:url" content="https://hstles.com/branded-saas" />
 <meta property="twitter:title" content="HSTLES Products - Enterprise Tools. Personal Simplicity." />
-<meta property="twitter:description" content="calndr.app, wrkly.app, fyles.app, ORBTR, and CareLedger - Production-grade SaaS applications." />
+<meta property="twitter:description" content="calndr.app, wrkly.app, deposs.app, ORBTR, and CareLedger - Production-grade SaaS applications." />
 <meta property="twitter:image" content="https://hstles.com/images/products-og.png" />
 <!-- /HEAD_META -->
 
@@ -42,7 +42,7 @@
         {
             "@type": "SoftwareApplication",
             "position": 3,
-            "name": "coyn.app",
+            "name": "deposs.app",
             "applicationCategory": "FinanceApplication",
             "description": "Lightweight cryptocurrency payment processing with instant payouts and 1% fees."
         },
@@ -56,20 +56,27 @@
         {
             "@type": "SoftwareApplication",
             "position": 5,
+            "name": "encntr.app",
+            "applicationCategory": "SocialNetworkingApplication",
+            "description": "Decentralised dating and social app with peer-to-peer mesh-encrypted messaging and human-first verification."
+        },
+        {
+            "@type": "SoftwareApplication",
+            "position": 6,
             "name": "ORBTR",
             "applicationCategory": "BusinessApplication",
             "description": "Device management platform with distributed architecture and zero-trust networking."
         },
         {
             "@type": "SoftwareApplication",
-            "position": 6,
+            "position": 7,
             "name": "FRGHT",
             "applicationCategory": "BusinessApplication",
             "description": "Freight and warehousing management for transport operators and logistics providers."
         },
         {
             "@type": "SoftwareApplication",
-            "position": 7,
+            "position": 8,
             "name": "CareLedger",
             "applicationCategory": "BusinessApplication",
             "description": "Privacy Act compliant healthcare data management system."
@@ -80,208 +87,188 @@
 <!-- /STRUCTURED_DATA -->
 
 <!-- CONTENT -->
-<!-- Header -->
-<header id="header">
-    <div class="content">
-        <h1><a href="/" hx-get="/pages/home.html" hx-target="#page-content" hx-push-url="/" hx-swap="innerHTML">HSTLES</a></h1>
-        <p>Our Products</p>
-        <p>Production-grade SaaS applications<br>
-            built on our distributed mesh platform
-        </p>
-        <ul class="actions">
-            <li><a href="https://login.hstles.com/apps" class="button primary icon solid fa-cloud">Apps</a></li>
-            <li><a href="#products" class="button icon solid fa-chevron-down scrolly">Explore</a></li>
+<!-- Hero -->
+<section class="hero" style="padding-bottom:var(--space-16);">
+  <div class="container">
+    <div class="section-label">Products</div>
+    <h1>Enterprise tools.<br><span class="accent">Personal simplicity.</span></h1>
+    <p class="hero-sub">Production-grade SaaS applications built on our distributed mesh platform. Each service designed for reliability, security, and performance — without the enterprise complexity.</p>
+    <div class="hero-actions">
+      <a href="https://login.hstles.com/apps" class="btn btn-primary btn-lg">Apps</a>
+      <a href="/platform" hx-get="/pages/platform.html" hx-target="#page-content" hx-push-url="/platform" hx-swap="innerHTML" class="btn btn-secondary btn-lg">Platform Details</a>
+    </div>
+  </div>
+</section>
+
+<!-- Products Grid -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Our Products</div>
+      <h2>Built on a distributed mesh platform</h2>
+      <p>All applications run on HSTLES with authentication, identity management, and P2P networking.</p>
+    </div>
+
+    <div class="feature-grid">
+      <!-- calndr.app -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h3>calndr.app</h3>
+        <p>Multi-source calendar sync across iCal, Microsoft 365, and Google Calendar. Create custom collections that pull from multiple sources and push to your choice of destination. First 4 sync sources free.</p>
+        <div class="chip">Coming Soon</div>
+      </div>
+
+      <!-- wrkly.app -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>wrkly.app</h3>
+        <p>Intelligent workforce rostering with automatic schedule generation and constraint solving. Smart scheduling across Stores, Zones, and Teams. Save up to 80% of roster planning time.</p>
+        <div class="chip">Coming Soon</div>
+      </div>
+
+      <!-- deposs.app -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>deposs.app</h3>
+        <p>Lightweight cryptocurrency payment processing for businesses and developers. Accept Bitcoin, Ethereum, USDT and more with instant payouts to your wallet. Simple API with 1% flat fee per transaction.</p>
+        <div class="chip">Coming Soon</div>
+      </div>
+
+      <!-- contrct.app -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>contrct.app</h3>
+        <p>Mobile-first platform connecting users with independent contractors. Request services with photos and videos, receive estimates, and book with confidence. Fair booking fees and reputation-based matching.</p>
+        <div class="chip">Coming Soon</div>
+      </div>
+
+      <!-- encntr.app -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>encntr.app</h3>
+        <p>Decentralised dating and social app with peer-to-peer mesh-encrypted messaging. Grid-based discovery, human-first verification (liveness, kinetic, GPS, age), and anti-harassment by design. Works offline via Bluetooth mesh.</p>
+        <div class="chip">Coming Soon</div>
+      </div>
+
+      <!-- ORBTR -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>ORBTR</h3>
+        <p>Zero-trust device management and SD-WAN. Unified endpoint management, encrypted mesh overlay, and policy enforcement in a single agent. Deploy in minutes, manage from anywhere.</p>
+        <a href="https://orbtr.io" class="chip" style="text-decoration:none;">Live at orbtr.io</a>
+      </div>
+
+      <!-- FRGHT -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3>FRGHT</h3>
+        <p>End-to-end transport management for freight operators and logistics providers. Job booking, dispatch, driver allocation, consignment tracking, and warehouse inventory. Built for Australian freight companies.</p>
+        <div class="chip">Coming Soon</div>
+      </div>
+
+      <!-- CareLedger -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>CareLedger</h3>
+        <p>Secure, compliant healthcare data system with encrypted record keeping and distributed storage. Patient records, clinical notes, and health metrics stored with zero-knowledge encryption. Privacy Act compliant.</p>
+        <div class="chip">Seeking Partners</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CareLedger Partnership -->
+<section class="section">
+  <div class="container">
+    <div class="feature-row">
+      <div class="feature-row-text">
+        <div class="section-label">Partnership</div>
+        <h2>CareLedger Partnership Opportunity</h2>
+        <p>We're seeking healthcare providers and pharmacies to partner with us in building CareLedger. Free migration plus 12 months platform access for organisations who can help define the requirements and workflows they need. Help shape a system built around how you actually work.</p>
+        <ul class="feature-list">
+          <li><span class="check">&#10003;</span> Free data migration from existing systems</li>
+          <li><span class="check">&#10003;</span> 12 months free platform access</li>
+          <li><span class="check">&#10003;</span> Shape the product to match your workflows</li>
+          <li><span class="check">&#10003;</span> Privacy Act compliant from day one</li>
         </ul>
+        <div style="margin-top:1.5rem;">
+          <a href="mailto:partners@hstles.com?subject=CareLedger%20Partnership" class="btn btn-primary">Partner With Us</a>
+        </div>
+      </div>
+      <div class="feature-row-visual">
+        <div class="info-box">
+          <h4>Partnership Benefits</h4>
+          <ul class="feature-list">
+            <li><span class="check">&#10003;</span> Free migration from legacy systems</li>
+            <li><span class="check">&#10003;</span> 12 months platform access</li>
+            <li><span class="check">&#10003;</span> Direct input on product design</li>
+            <li><span class="check">&#10003;</span> Privacy Act &middot; APPs compliant</li>
+            <li><span class="check">&#10003;</span> Zero-knowledge encryption</li>
+          </ul>
+          <p style="margin-top:1rem;opacity:0.7;">Contact: partners@hstles.com</p>
+        </div>
+      </div>
     </div>
-    <div class="hover content"><img src="/assets/css/images/hstles/box.svg" class="illustration"></div>
-</header>
-
-<!-- Products Overview -->
-<section id="products" class="wrapper style2 special">
-    <header class="major">
-        <h2>Enterprise tools. Personal simplicity.</h2>
-        <p>Each application is designed for reliability, security, and performance<br>
-            without the enterprise complexity.</p>
-    </header>
-    <ul class="icons major">
-        <li><span class="icon solid fa-calendar"><span class="label"></span></span></li>
-        <li><span class="icon solid fa-truck"><span class="label"></span></span></li>
-        <li><span class="icon solid fa-heartbeat"><span class="label"></span></span></li>
-    </ul>
+  </div>
 </section>
 
-<!-- calndr.app -->
-<section id="calndr" class="wrapper special">
-    <header class="major">
-        <h2><i class="icon solid fa-calendar"></i> calndr.app</h2>
-        <h3>Multi-source calendar sync</h3>
-        <p>Intelligent calendar synchronization across iCal, Microsoft 365, and Google Calendar.
-            <br>Create custom collections that pull from multiple sources and push to your choice of destination.
-            <br>First 4 sync sources free, with flexible pricing for power users.
-            <br><br>Saving your time by consolidating workflows.
-        </p>
-    </header>
-    <ul class="icons labeled">
-        <li><span class="icon solid fa-calendar-alt"><span class="labels">multi-source sync</span></span></li>
-        <li><span class="icon solid fa-layer-group"><span class="labels">custom collections</span></span></li>
-        <li><span class="icon solid fa-sync"><span class="labels">real-time updates</span></span></li>
-        <li><span class="icon solid fa-bolt"><span class="labels">high performance</span></span></li>
-    </ul>
-    <ul class="actions special">
-        <li><a href="#" class="button disabled">Coming Soon</a></li>
-    </ul>
-</section>
-
-<!-- wrkly.app -->
-<section id="wrkly" class="wrapper style2 special">
-    <header class="major">
-        <h2><i class="icon solid fa-users"></i> wrkly.app</h2>
-        <h3>Intelligent workforce rostering</h3>
-        <p>Smart scheduling and roster management across Stores, Zones, and Teams.
-            <br>Automatic roster generation using employee availability, capabilities, conditions, and min-max hours.
-            <br>Real-world modeling with flexible team structures and constraint-based optimization.
-            <br><br>Save up to 80% of roster planning time while ensuring fair distribution and skill coverage.
-        </p>
-    </header>
-    <ul class="icons labeled">
-        <li><span class="icon solid fa-calendar-check"><span class="labels">smart rostering</span></span></li>
-        <li><span class="icon solid fa-brain"><span class="labels">constraint solver</span></span></li>
-        <li><span class="icon solid fa-balance-scale"><span class="labels">fair allocation</span></span></li>
-        <li><span class="icon solid fa-tasks"><span class="labels">capability matching</span></span></li>
-    </ul>
-    <ul class="actions special">
-        <li><a href="#" class="button disabled">Coming Soon</a></li>
-    </ul>
-</section>
-
-<!-- coyn.app -->
-<section id="coyn" class="wrapper special">
-    <header class="major">
-        <h2><i class="icon solid fa-coins"></i> coyn.app</h2>
-        <h3>Cryptocurrency payment processing</h3>
-        <p>Lightweight crypto payment processing for businesses and developers.
-            <br>Accept Bitcoin, Ethereum, USDT and more with instant payouts to your wallet.
-            <br>Simple API with webhook notifications and just 1% flat fee per transaction.
-            <br><br>No complexity, no delays - just seamless crypto payments.
-        </p>
-    </header>
-    <ul class="icons labeled">
-        <li><span class="icon solid fa-bolt"><span class="labels">instant payouts</span></span></li>
-        <li><span class="icon solid fa-percentage"><span class="labels">1% flat fee</span></span></li>
-        <li><span class="icon solid fa-code"><span class="labels">developer API</span></span></li>
-        <li><span class="icon solid fa-bell"><span class="labels">webhook updates</span></span></li>
-    </ul>
-    <ul class="actions special">
-        <li><a href="#" class="button disabled">Coming Soon</a></li>
-    </ul>
-</section>
-
-<!-- contrct.app -->
-<section id="contrct" class="wrapper style2 special">
-    <header class="major">
-        <h2><i class="icon solid fa-handshake"></i> contrct.app</h2>
-        <h3>Contractor marketplace</h3>
-        <p>Mobile-first platform connecting users with independent contractors.
-            <br>Request services with photos and videos, receive estimates, and book with confidence.
-            <br>Contractors control their pricing, availability, and payment methods.
-            <br><br>Fair booking fees, smart scheduling, and reputation-based matching.
-        </p>
-    </header>
-    <ul class="icons labeled">
-        <li><span class="icon solid fa-search"><span class="labels">job discovery</span></span></li>
-        <li><span class="icon solid fa-calendar-check"><span class="labels">smart scheduling</span></span></li>
-        <li><span class="icon solid fa-star"><span class="labels">reputation system</span></span></li>
-        <li><span class="icon solid fa-credit-card"><span class="labels">flexible payments</span></span></li>
-    </ul>
-    <ul class="actions special">
-        <li><a href="#" class="button disabled">Coming Soon</a></li>
-    </ul>
-</section>
-
-<!-- ORBTR -->
-<section id="orbtr" class="wrapper special">
-    <header class="major">
-        <h2><i class="icon solid fa-laptop"></i> ORBTR</h2>
-        <h3>Distributed device management</h3>
-        <p>Secure device management with P2P mesh networking and zero-trust architecture.
-            <br>Track hardware, enforce policies, and manage software across your fleet - without centralized servers.
-            <br>Direct device-to-device communication for faster response and offline capability.
-            <br><br>Built on HSTLES platform, ORBTR eliminates single points of failure while maintaining full control.
-        </p>
-    </header>
-    <ul class="icons labeled">
-        <li><span class="icon solid fa-network-wired"><span class="labels">P2P mesh</span></span></li>
-        <li><span class="icon solid fa-shield-alt"><span class="labels">zero-trust</span></span></li>
-        <li><span class="icon solid fa-cogs"><span class="labels">policy enforcement</span></span></li>
-        <li><span class="icon solid fa-chart-bar"><span class="labels">asset tracking</span></span></li>
-    </ul>
-    <ul class="actions special">
-        <li><a href="#" class="button disabled">Coming Soon</a></li>
-    </ul>
-</section>
-
-<!-- FRGHT -->
-<section id="frght" class="wrapper style2 special">
-    <header class="major">
-        <h2><i class="icon solid fa-truck"></i> FRGHT</h2>
-        <h3>Freight & warehousing management</h3>
-        <p>End-to-end transport management for freight operators and logistics providers.
-            <br>Job booking, dispatch, driver allocation, consignment tracking, and warehouse inventory.
-            <br>Real-time visibility from pickup to delivery with POD capture and customer notifications.
-            <br><br>Built for Australian freight companies - metro delivery, line haul, and warehousing in one platform.
-        </p>
-    </header>
-    <ul class="icons labeled">
-        <li><span class="icon solid fa-route"><span class="labels">dispatch & routing</span></span></li>
-        <li><span class="icon solid fa-warehouse"><span class="labels">warehouse management</span></span></li>
-        <li><span class="icon solid fa-barcode"><span class="labels">consignment tracking</span></span></li>
-        <li><span class="icon solid fa-file-signature"><span class="labels">POD capture</span></span></li>
-    </ul>
-    <ul class="actions special">
-        <li><a href="#" class="button disabled">Coming Soon</a></li>
-    </ul>
-</section>
-
-<!-- CareLedger -->
-<section id="careledger" class="wrapper special">
-    <header class="major">
-        <h2><i class="icon solid fa-heartbeat"></i> CareLedger</h2>
-        <h3>Healthcare data management</h3>
-        <p>Secure, compliant healthcare data system with encrypted record keeping and distributed storage.
-            <br>Building for Australian healthcare providers who want to move away from the old giants who make modern needs impossible.
-            <br>Patient records, clinical notes, and health metrics stored with zero-knowledge encryption.
-            <br><br>Distributed mesh architecture ensures data availability without compromising patient privacy across clinical providers.
-        </p>
-    </header>
-    <ul class="icons labeled">
-        <li><span class="icon solid fa-user-shield"><span class="labels">privacy act compliant</span></span></li>
-        <li><span class="icon solid fa-lock"><span class="labels">encrypted records</span></span></li>
-        <li><span class="icon solid fa-database"><span class="labels">distributed storage</span></span></li>
-        <li><span class="icon solid fa-clipboard-check"><span class="labels">clinical workflows</span></span></li>
-    </ul>
-    <div class="box info-box content-narrow mt-2em">
-        <h4><i class="icon solid fa-handshake"></i> Partnership Opportunity</h4>
-        <p>We're seeking healthcare providers and pharmacies to partner with us in building CareLedger.
-            <br><strong>Free migration + 12 months platform access</strong> for organisations who can help define the requirements and workflows they need.
-            <br>Help shape a system built around how you actually work.</p>
+<!-- Platform -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Infrastructure</div>
+      <h2>Built on a distributed mesh platform</h2>
+      <p>All applications run on HSTLES — our high-performance backend platform with authentication, identity management, and P2P networking. 50-70% faster than traditional architectures with defense-in-depth security at every layer.</p>
     </div>
-    <ul class="actions special">
-        <li><a href="mailto:partners@hstles.com?subject=CareLedger%20Partnership" class="button primary icon solid fa-envelope">Partner With Us</a></li>
-    </ul>
+
+    <div class="stats-row">
+      <div class="stat-block">
+        <div class="stat-number">50-70%</div>
+        <div class="stat-desc">Faster Than Traditional</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">8</div>
+        <div class="stat-desc">Products in Development</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">100%</div>
+        <div class="stat-desc">Australian Data Sovereignty</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">0</div>
+        <div class="stat-desc">Single Points of Failure</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Platform Info -->
-<section id="platform" class="wrapper style2 special">
-    <header class="major">
-        <h2>Built on a distributed mesh platform</h2>
-        <p>All applications run on HSTLES - our high-performance backend platform<br>
-            with authentication, identity management, and P2P networking.<br>
-            <br>50-70% faster than traditional architectures<br>
-            with defense-in-depth security at every layer.</p>
-    </header>
-    <ul class="actions special">
-        <li><a href="/platform" hx-get="/pages/platform.html" hx-target="#page-content" hx-push-url="/platform" hx-swap="innerHTML" class="button primary icon solid fa-microchip">Technical Details</a></li>
-        <li><a href="/custom-saas" hx-get="/pages/saas-custom.html" hx-target="#page-content" hx-push-url="/custom-saas" hx-swap="innerHTML" class="button icon solid fa-code-branch">Custom Solutions</a></li>
-    </ul>
+<!-- CTA -->
+<section class="section section-cta">
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Need something custom?</h2>
+      <p>Don't see what you need? We build custom applications on the same platform with SLA-backed support and predictable pricing.</p>
+      <div class="hero-actions">
+        <a href="/platform" hx-get="/pages/platform.html" hx-target="#page-content" hx-push-url="/platform" hx-swap="innerHTML" class="btn btn-primary btn-lg">Platform Details</a>
+        <a href="/custom-saas" hx-get="/pages/saas-custom.html" hx-target="#page-content" hx-push-url="/custom-saas" hx-swap="innerHTML" class="btn btn-secondary btn-lg">Custom Solutions</a>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- /CONTENT -->

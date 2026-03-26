@@ -1,66 +1,90 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <title id="page-title">HSTLES</title>
-    <meta name="description" id="page-description" content="Beyond hosting. Into solving." />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="HSTLES" />
-    <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
-    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
-    
-    <!-- HTMX -->
-    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
-    
-    <!-- Site Configuration -->
-    <script src="/assets/js/config.js"></script>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
-</head>
-<body class="is-preload">
-    <!-- Navigation - loaded from component -->
-    <div hx-get="/components/navbar.html" hx-trigger="load" hx-swap="outerHTML"></div>
-    
-    <!-- Page Content -->
-    <main id="page-content"></main>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <!-- Footer - loaded from component -->
-    <div hx-get="/components/footer.html" hx-trigger="load" hx-swap="outerHTML"></div>
-    
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" title="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-    
-    <!-- Scripts -->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/jquery.scrolly.min.js"></script>
-    <script src="/assets/js/browser.min.js"></script>
-    <script src="/assets/js/breakpoints.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/router.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/site-init.js"></script>
+  <title id="page-title">HSTLES — Beyond Hosting. Into Solving.</title>
+  <meta name="description" id="page-description" content="HSTLES delivers branded SaaS products, custom solutions, and managed IT services for Australian businesses.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HSTLES">
+  <meta property="og:title" content="HSTLES — Beyond Hosting. Into Solving.">
+  <meta property="og:description" content="Branded SaaS products, custom solutions, and managed IT services for Australian businesses.">
+  <meta property="og:image" content="https://hstles.com/assets/images/favicon/favicon.svg">
+  <meta property="og:url" content="https://hstles.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HSTLES — Beyond Hosting. Into Solving.">
+  <meta name="twitter:description" content="Branded SaaS products, custom solutions, and managed IT services for Australian businesses.">
+  <meta name="twitter:image" content="https://hstles.com/assets/images/favicon/favicon.svg">
+
+  <link rel="canonical" href="https://hstles.com">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="HSTLES">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+  <!-- Site Configuration -->
+  <script src="/assets/js/config.js"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body x-data>
+
+  <!-- Navigation - loaded from component -->
+  <div hx-get="/components/navbar.html" hx-trigger="load" hx-swap="outerHTML"></div>
+
+  <!-- Page Content -->
+  <main id="page-content"></main>
+
+  <!-- Footer - loaded from component -->
+  <div hx-get="/components/footer.html" hx-trigger="load" hx-swap="outerHTML"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Site Scripts -->
+  <script src="/assets/js/router.js"></script>
+  <script src="/assets/js/site-init.js"></script>
+
+  <!-- Back to top logic -->
+  <script>
+    (function() {
+      var btn = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      });
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
 </body>
 </html>
