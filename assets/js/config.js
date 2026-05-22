@@ -10,6 +10,8 @@ window.siteConfig = {
         '/custom-saas': '/pages/saas-custom.html',
         '/services': '/pages/it-services.html',
         '/it-services': '/pages/it-services.html',
+        '/ai': '/pages/ai.html',
+        '/ai-solutions': '/pages/ai.html',
         '/pricing': '/pages/calculator.html',
         '/calculator': '/pages/calculator.html',
         '/about': '/pages/partnering.html',

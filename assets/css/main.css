@@ -75,7 +75,7 @@ html {
   overflow-x: hidden;
 }
 
-body { min-height: 100vh; overflow-x: hidden; }
+body { min-height: 100vh; overflow-x: hidden; background: var(--surface-0); }
 
 a { color: var(--text-accent); text-decoration: none; transition: color var(--transition-fast); }
 a:hover { color: var(--accent-primary); }
@@ -95,6 +95,11 @@ h1, h2, h3, h4, h5, h6 { font-weight: 600; line-height: 1.2; color: var(--text-p
 /* ── HTMX Page Transitions ─────────────────────────────── */
 #page-content {
   min-height: 60vh;
+  /* Opaque theme background: HTMX page transitions apply an opacity fade,
+     which promotes this element to its own compositing layer. Without an
+     opaque background the layer renders against the compositor's default
+     white instead of the <html> background. */
+  background: var(--surface-0);
 }
 .htmx-swapping { opacity: 0; transition: opacity 0.15s ease-out; }
 .htmx-settling { opacity: 1; transition: opacity 0.15s ease-in; }
